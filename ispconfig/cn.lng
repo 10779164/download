@@ -1,0 +1,2000 @@
+---|ISPConfig Language File|3.0.2.2|cn
+--|global|cn|cn.lng
+<?php
+$wb['conf_format_dateshort'] = 'Y-m-d';
+$wb['conf_format_datelong'] = 'l dS of F Y';
+$wb['conf_format_timeshort'] = 'H:i';
+$wb['conf_format_timelong'] = 'H:i:s';
+$wb['conf_format_datetime'] = 'Y-m-d H:i';
+$wb['301'] = '当前用户不允许使用本模块。';
+$wb['302'] = '非法模块。';
+$wb['1001'] = '用户名和密码不能为空。';
+$wb['1002'] = '用户名或密码错误。';
+$wb['1003'] = '用户名被停用！';
+$wb['delete_confirmation'] = '你真的要删除本条记录？';
+$wb['error_no_view_permission'] = '您无权浏览本记录或您要浏览的记录不存在。';
+$wb['error_no_delete_permission'] = '您无权删除本记录！';
+$wb['page_txt'] = '页';
+$wb['page_of_txt'] = '/';
+$wb['page_next_txt'] = '下一页';
+$wb['page_back_txt'] = '返回';
+$wb['delete_txt'] = '删除';
+$wb['filter_txt'] = '过滤';
+$wb['add_new_record_txt'] = '增加新纪录';
+$wb['btn_save_txt'] = '保存';
+$wb['btn_cancel_txt'] = '返回';
+$wb['top_menu_system'] = "系统管理";
+$wb['top_menu_client'] = "用户管理";
+$wb['top_menu_email'] = "邮箱管理";
+$wb['top_menu_monitor'] = "系统监控";
+$wb['top_menu_sites'] = "站点设置";
+$wb['top_menu_dns'] = "DNS管理";
+$wb['top_menu_tools'] = "工具箱";
+$wb['top_menu_help'] = "帮助";
+$wb['toolsarea_head_txt'] = "工具箱";
+?>
+
+--|help|cn|cn_support_message.lng
+<?php
+$wb['recipient_id_txt'] = '接收者ID';
+$wb['sender_id_txt'] = '发送者ID';
+$wb['subject_txt'] = '标题';
+$wb['message_txt'] = '内容';
+$wb['tstamp_txt'] = '发送时间';
+?>
+
+
+--|help|cn|cn_support_message_list.lng
+<?php
+$wb['list_head_txt'] = '技术支持';
+$wb['sender_id_txt'] = '发送者';
+$wb['subject_txt'] = '标题';
+$wb['add_new_record_txt'] = '寻求技术支持';
+?>
+
+--|help|cn|cn.lng
+<?php
+$wb['Support Message'] = '短信息支持';
+$wb['Message'] = '短信息';
+$wb['Send message'] = '发送短信息';
+$wb['View messages'] = '查看短信息';
+$wb['Support'] = '技术支持';
+$wb['System'] = '系统';
+$wb['Client'] = '客户';
+$wb['Email']= '邮件';
+$wb['Monitor'] = '监控';
+$wb['Sites'] = '站点';
+$wb['DNS'] = '域名';
+$wb['Tools'] = '工具';
+$wb['Help'] = '帮助';
+?>
+
+--|client|cn|cn_clients_list.lng
+<?php
+$wb['list_head_txt'] = '用户';
+$wb['client_id_txt'] = '用户名';
+$wb['company_name_txt'] = '公司名称';
+$wb['contact_name_txt'] = '联系人';
+$wb['city_txt'] = '地区';
+$wb['country_txt'] = '国家';
+$wb['add_new_record_txt'] = '添加新用户';
+?>
+
+
+--|client|cn|cn_client_template_list.lng
+<?php
+$wb['list_head_txt'] = '客户模板';
+$wb['template_type_txt'] = '类型';
+$wb['template_name_txt'] = '模板名称';
+?>
+
+
+--|client|cn|cn.lng
+<?php
+$wb['用户'] = '用户';
+$wb['Address'] = '地址';
+$wb['Limits'] = '限制';
+$wb['Add Client'] = '增加用户';
+$wb['Edit Client'] = '编辑用户';
+$wb['Clients'] = '用户管理';
+$wb['Edit Client-Templates'] = '编辑用户模板';
+$wb['System'] = '系统';
+$wb['Client'] = '客户';
+$wb['Email'] = '邮件';
+$wb['Monitor'] = '监控';
+$wb['Sites'] = '网站';
+$wb['DNS'] = '域名';
+$wb['Tools'] = '工具';
+$wb['Help'] = '帮助';
+?>
+
+
+--|client|cn|cn_client.lng
+<?php
+$wb['limit_maildomain_txt'] = '最大电子邮件域名数';
+$wb['limit_mailbox_txt'] = '最大电子邮箱数';
+$wb['limit_mailalias_txt'] = '最大电子邮件别名数';
+$wb['limit_mailforward_txt'] = '最大电子邮件转发数';
+$wb['limit_mailcatchall_txt'] = '最大电子邮件手机帐号';
+$wb['limit_mailrouting_txt'] = '最大电子邮件路由数';
+$wb['limit_mailfilter_txt'] = '最大邮件地址过滤数';
+$wb['limit_fetchmail_txt'] = '最大 fetchmail 帐号';
+$wb['limit_mailquota_txt'] = '邮箱大小';
+$wb['limit_spamfilter_wblist_txt'] = '最多垃圾邮件过滤黑白名单数';
+$wb['limit_spamfilter_user_txt'] = '最大垃圾邮件过滤用户数';
+$wb['limit_spamfilter_policy_txt'] = '最大垃圾邮件过滤策略数';
+$wb['default_mailserver_txt'] = '默认邮件服务器';
+$wb['company_name_txt'] = '公司';
+$wb['contact_name_txt'] = '联系人';
+$wb['username_txt'] = '用户名';
+$wb['password_txt'] = '密码';
+$wb['password_strength_txt'] = '密码强度';
+$wb['language_txt'] = '语言';
+$wb['usertheme_txt'] = '风格';
+$wb['street_txt'] = '街道';
+$wb['zip_txt'] = '邮编';
+$wb['city_txt'] = '城市';
+$wb['state_txt'] = '区县';
+$wb['country_txt'] = '国家';
+$wb['telephone_txt'] = '电话';
+$wb['mobile_txt'] = '手机';
+$wb['fax_txt'] = '传真';
+$wb['email_txt'] = '电子邮件';
+$wb['internet_txt'] = '主页';
+$wb['icq_txt'] = 'QQ';
+$wb['notes_txt'] = '备注';
+$wb['company_txt'] = '公司';
+$wb['title_txt'] = '标题';
+$wb['firstname_txt'] = '名';
+$wb['surname_txt'] = '姓';
+$wb['limit_domain_txt'] = '域名个数';
+$wb['limit_subdomain_txt'] = '二级域名个数';
+$wb['limit_webquota_txt'] = '网站空间大小';
+$wb['limit_database_txt'] = '最大数据库个数';
+$wb['ip_address_txt'] = 'IP地址';
+$wb['limit_client_error_notint'] = '二级客户限制必须为数字。';
+$wb['firstname_error_empty'] = '名为空！';
+$wb['contact_error_empty'] = '联系人为空。';
+$wb['default_webserver_txt'] = '默认WEB服务器';
+$wb['limit_web_domain_txt'] = '网站的最大域名个数';
+$wb['limit_web_aliasdomain_txt'] = '最大网站别名个数';
+$wb['limit_web_subdomain_txt'] = '最大网站二级域名个数';
+$wb['limit_ftp_user_txt'] = '最大FTP用户个数';
+$wb['default_dnsserver_txt'] = '默认DNS服务器';
+$wb['limit_dns_zone_txt'] = '最大DNS域个数';
+$wb['limit_dns_record_txt'] = '最大DNS记录个数';
+$wb['limit_shell_user_txt'] = '最大SHELL用户个数';
+$wb['limit_client_txt'] = '客户数量已经达到最大。';
+$wb['username_error_empty'] = '用户名为空。';
+$wb['username_error_unique'] = '用户名已经存在。';
+$wb['limit_maildomain_error_notint'] = '电子邮件域名限制必须是数字。';
+$wb['limit_mailbox_error_notint'] = '邮箱数限制必须为数字。';
+$wb['limit_mailalias_error_notint'] = '电子邮件别名限制数必须为数字。';
+$wb['limit_mailforward_error_notint'] = '电子邮件转发数必须为数字。';
+$wb['limit_mailcatchall_error_notint'] = '邮件批量选取限制必须为数字。';
+$wb['limit_mailrouting_error_notint'] = '邮件路由数限制必须为数字。';
+$wb['limit_mailfilter_error_notint'] = '电子邮件过滤数限制必须是数字。';
+$wb['limit_mailfetchmail_error_notint'] = 'The fetchmail limit must be a number.';
+$wb['limit_mailquota_error_notint'] = '电子邮件磁盘配额必须是数字。';
+$wb['limit_spamfilter_wblist_error_notint'] = '垃圾邮件黑/白名单数限制必须是数字。';
+$wb['limit_spamfilter_user_error_notint'] = '垃圾邮件过滤用户素限制必须是数字。';
+$wb['limit_spamfilter_policy_error_notint'] = '垃圾邮件过滤策略限制必须为数字。';
+$wb['limit_web_domain_error_notint'] = '网站限制必须是数字。';
+$wb['limit_web_aliasdomain_error_notint'] = '网站别名限制必须为数字。';
+$wb['limit_web_subdomain_error_notint'] = '网站二级域名限制必须为数字。';
+$wb['limit_ftp_user_error_notint'] = 'FTP用户数限制必须为数字。';
+$wb['limit_shell_user_error_notint'] = 'Shell用户数限制必须为数字。';
+$wb['limit_dns_zone_error_notint'] = 'DNS记录数限制必须为数字。';
+$wb['default_dbserver_txt'] = '默认数据库服务器';
+$wb['limit_database_error_notint'] = '数据库个数限制必须为数字。';
+$wb['username_error_regex'] = '用户名含有非法字符。';
+$wb['template_master_txt'] = '主模版';
+$wb['template_additional_txt'] = '附加模版';
+$wb['ssh_chroot_txt'] = 'SSH-Chroot 选项';
+$wb['web_php_options_txt'] = 'PHP 选项';
+?>
+
+
+--|client|cn|cn_client_template.lng
+<?php
+$wb['limit_client_error_notint'] = '客户限制不为数字。';
+$wb['limit_maildomain_txt'] = '最大电子邮件域名数。';
+$wb['limit_mailbox_txt'] = '最大电子邮箱个数';
+$wb['limit_mailalias_txt'] = '最大电子邮件别名数';
+$wb['limit_mailforward_txt'] = '最大电子邮件转发数';
+$wb['limit_mailcatchall_txt'] = '最大首次批量选取账号数';
+$wb['limit_mailrouting_txt'] = '最大邮件路由数';
+$wb['limit_mailfilter_txt'] = '最大电子邮件过滤数';
+$wb['limit_fetchmail_txt'] = '最大抓取邮件帐号数';
+$wb['limit_mailquota_txt'] = '邮箱配额';
+$wb['limit_spamfilter_wblist_txt'] = '最大垃圾邮件过滤黑白名单数';
+$wb['limit_spamfilter_user_txt'] = '最大垃圾邮件过滤数';
+$wb['limit_spamfilter_policy_txt'] = '最大垃圾邮件过滤策略数';
+$wb['limit_domain_txt'] = '域名限制';
+$wb['limit_subdomain_txt'] = '二级域名限制';
+$wb['limit_webquota_txt'] = '网站空间大小限制';
+$wb['limit_database_txt'] = '最大数据库个数';
+$wb['limit_web_domain_txt'] = '网站最大域名数';
+$wb['limit_web_aliasdomain_txt'] = '网站最大域名别名数';
+$wb['limit_web_subdomain_txt'] = '最大二级域名数';
+$wb['limit_ftp_user_txt'] = '最大FTP用户数';
+$wb['limit_dns_zone_txt'] = '最大DNS域数';
+$wb['limit_dns_record_txt'] = '最大DNS记录数';
+$wb['limit_shell_user_txt'] = '最大Shell用户数';
+$wb['limit_client_txt'] = '最大客户数';
+$wb['limit_maildomain_error_notint'] = '电子邮件域名数必须是数字';
+$wb['limit_mailbox_error_notint'] = '邮箱限制必须是数字';
+$wb['limit_mailalias_error_notint'] = '电子邮件别名限制必须是数字';
+$wb['limit_mailforward_error_notint'] = '电子邮件转发限制必须是数字';
+$wb['limit_mailcatchall_error_notint'] = '电子邮件首次批量选取限制必须为数字。';
+$wb['limit_mailrouting_error_notint'] = '电子邮件路由限制必须为数字';
+$wb['limit_mailfilter_error_notint'] = '电子邮件过滤限制必须为数字';
+$wb['limit_mailfetchmail_error_notint'] = '电子邮件住区限制必须为数字';
+$wb['limit_mailquota_error_notint'] = '邮箱容量限制必须为数字';
+$wb['limit_spamfilter_wblist_error_notint'] = '垃圾邮件黑/白名单限制必须为数字';
+$wb['limit_spamfilter_user_error_notint'] = '垃圾邮件过滤帐号限制和必须为数字';
+$wb['limit_spamfilter_policy_error_notint'] = '垃圾邮件过滤策略限制必须为数字';
+$wb['limit_web_domain_error_notint'] = '网站限制必须为数字';
+$wb['limit_web_aliasdomain_error_notint'] = '网站域名别名限制必须为数字';
+$wb['limit_web_subdomain_error_notint'] = '网站二级域名限制必须为数字';
+$wb['limit_ftp_user_error_notint'] = 'FTP用户限制必须为数字';
+$wb['limit_shell_user_error_notint'] = 'Shell用户限制必须为数字';
+$wb['limit_dns_zone_error_notint'] = 'DNS记录数限制必须为数字';
+$wb['limit_database_error_notint'] = '数据库数限制必须为数字';
+$wb['error_template_name_empty'] = '请输入模板名称';
+?>
+
+
+--|designer|cn|cn_form_edit.lng
+<?php
+$wb['name_txt'] = '表单名称';
+$wb['title_txt'] = '表单标题';
+$wb['template_txt'] = '模板';
+$wb['navframe_txt'] = '导航框架';
+$wb['startpage_txt'] = '首页';
+$wb['tab_width_txt'] = 'Tab宽度';
+$wb['save_txt'] = '保存';
+$wb['cancel_txt'] = '取消';
+$wb['header_txt'] = '表单属性';
+$wb['description_txt'] = '描述';
+$wb['action_txt'] = 'Action (script)';
+$wb['db_table_txt'] = '数据库';
+$wb['db_table_idx_txt'] = '数据索引';
+$wb['db_history_txt'] = '撤消(还原)Log';
+$wb['tab_default_txt'] = '默认标签';
+$wb['list_default_txt'] = '默认目录';
+$wb['auth_txt'] = '权限';
+$wb['auth_preset_userid_txt'] = '用户ID';
+$wb['auth_preset_groupid_txt'] = '群组ID';
+$wb['auth_preset_perm_user_txt'] = '许可用户';
+$wb['auth_preset_perm_group_txt'] = '许可用户组';
+$wb['auth_preset_perm_other_txt'] = '许可的其他';
+?>
+
+
+--|designer|cn|cn_module_nav_edit.lng
+<?php
+$wb['title_txt'] = '标题';
+$wb['header_txt'] = '导航性能';
+$wb['save_txt'] = '保存';
+$wb['cancel_txt'] = '取消';
+?>
+
+
+--|designer|cn|cn_module_show.lng
+<?php
+$wb['header_txt'] = '菜单编辑';
+$wb['title_txt'] = '标题';
+$wb['name_txt'] = '模块';
+$wb['delete_txt'] = '删除';
+$wb['properties_txt'] = '属性';
+$wb['new_menu_txt'] = '新的菜单';
+$wb['edit_txt'] = '编辑';
+$wb['new_txt'] = '新的';
+$wb['up_txt'] = 'Up';
+$wb['down_txt'] = 'Down';
+$wb['module_txt'] = '模块';
+$wb['module_del_txt'] = 'Wollen Sie das Modul und alle im Modul angelegten Dateien und Unterverzeichnisse lschen?';
+$wb['menu_del_txt'] = 'Wollen Sie das Men mit allen Untereintrgen lschen?';
+$wb['item_del_txt'] = 'Wollen Sie den Meneintrag lschen?';
+?>
+
+
+--|designer|cn|cn.lng
+<?php
+?>
+
+
+
+
+
+
+
+--|designer|cn|cn_module_edit.lng
+<?php
+$wb['name_txt'] = '模块名称';
+$wb['title_txt'] = '模块标题';
+$wb['template_txt'] = '模板文件';
+$wb['navframe_txt'] = '导航框架';
+$wb['startpage_txt'] = '默认页面';
+$wb['tab_width_txt'] = '表格宽度';
+$wb['save_txt'] = '保存';
+$wb['cancel_txt'] = '取消';
+$wb['header_txt'] = '模块性能';
+$wb['description_txt'] = '<b></b><br><br><b>Modulename:</b> Name of the module directory. Only numbers, chars and underscore allowed.<br><b>Moduletitle:</b> Will be shown in the (upper) main navigation.<br><b>Template file:</b> Template file of the module. Currently available: module.tpl.htm and module_tree.tpl.htm. Default is module.tpl.htm.<br><b>NaviFrame:</b> If module_tree.tpl.htm selected as template file, enter here the path to the script file for the left frame.<br><b>Default page:</b> These page will be shown when the module is opened.<br><b>Tab width:</b> Width of the Tabs in the main navigation. The field is empty by default. You can enter values absolute in pixel (e.g 20) or relative (e.g 20%).<br><b>Hint:</b> All paths are relative to the directory web.';
+?>
+
+
+--|designer|cn|cn_module_list.lng
+<?php
+$wb['list_head_txt'] = '后台模块';
+$wb['module_txt'] = '模块';
+$wb['title_txt'] = '标题';
+?>
+
+
+--|designer|cn|cn_form_list.lng
+<?php
+$wb['list_head_txt'] = '后台表单';
+$wb['form_txt'] = '表单';
+$wb['module_txt'] = '模块';
+$wb['title_txt'] = '标题';
+$wb['description_txt'] = '描述';
+?>
+
+
+--|designer|cn|cn_module_nav_item_edit.lng
+<?php
+$wb['title_txt'] = '标题';
+$wb['target_txt'] = '目录';
+$wb['link_txt'] = '链接';
+$wb['header_txt'] = '导航性能';
+$wb['save_txt'] = '保存';
+$wb['cancel_txt'] = '取消';
+?>
+
+
+--|admin|cn|cn_users_list.lng
+<?php
+$wb['list_head_txt'] = '用户管理';
+$wb['username_txt'] = '用户名';
+$wb['name_txt'] = '名';
+$wb['vorname_txt'] = '姓';
+$wb['ort_txt'] = '城市';
+$wb['add_new_record_txt'] = '增加新用户';
+?>
+
+
+--|admin|cn|cn_language_list.lng
+<?php
+$wb['list_head_txt'] = '语言文件编辑器';
+$wb['language_select_txt'] = '选择语言';
+$wb['module_txt'] = '功能模块';
+$wb['lang_file_txt'] = '语言文件';
+$wb['lang_file_date_txt'] = '最后修改时间';
+?>
+
+
+--|admin|cn|cn_software_repo.lng
+<?php
+$wb['repo_name_txt'] = '知识库';
+$wb['repo_url_txt'] = '地址';
+$wb['repo_username_txt'] = '用户名（可选）';
+$wb['repo_password_txt'] = '密码（可选）';
+$wb['active_txt'] = '激活';
+?>
+
+
+--|admin|cn|cn_groups_list.lng
+<?php
+$wb['list_head_txt'] = '系统用户组';
+$wb['description_txt'] = '描述';
+$wb['name_txt'] = '组';
+$wb['add_new_record_txt'] = '添加新组';
+?>
+
+
+--|admin|cn|cn_software_package_list.lng
+<?php
+$wb['list_head_txt'] = '软件包管理';
+$wb['installed_txt'] = '状态';
+$wb['package_title_txt'] = '软件包';
+$wb['package_description_txt'] = '描述';
+$wb['action_txt'] = '执行';
+?>
+
+
+--|admin|cn|cn_system_config.lng
+<?php
+$wb['warning'] = '请小心编辑这些值！！请不要移除系统前缀以免影响更多的客户！';
+$wb['dbname_prefix_txt'] = '数据库名前缀';
+$wb['dbuser_prefix_txt'] = '数据库用户名前缀';
+$wb['shelluser_prefix_txt'] = 'Shell用户名前缀';
+$wb['ftpuser_prefix_txt'] = 'FTP用户名前缀';
+$wb['dbname_prefix_error_regex'] = '不被许可的数据库名前缀。';
+$wb['dbuser_prefix_error_regex'] = '不给许可的数据库用户名前缀。';
+$wb['ftpuser_prefix_error_regex'] = '不被许可的FTP用户名前缀';
+$wb['shelluser_prefix_error_regex'] = '不被许可的Shell用户名前缀';
+$wb['dblist_phpmyadmin_link_txt'] = '在数据库列表中链接到phpmyadmin';
+$wb['mailboxlist_webmail_link_txt'] = '在邮箱列表中链接到webmail';
+?>
+
+
+--|admin|cn|cn_language_complete.lng
+<?php
+$wb['list_head_txt'] = '合并语言';
+$wb['list_desc_txt'] = '以英语为依据合并选择的语言，被合并语言缺失的部分将使用英语文件内的内容替代。';
+$wb['language_select_txt'] = '选择语言';
+$wb['btn_save_txt'] = '立即合并';
+$wb['btn_cancel_txt'] = '返回';
+?>
+
+
+--|admin|cn|cn_language_import.lng
+<?php
+$wb['list_head_txt'] = '导入语言文件';
+$wb['language_import_txt'] = '选择语言文件';
+$wb['btn_save_txt'] = '导入选择的语言文件';
+$wb['language_overwrite_txt'] = '如果存在即覆盖';
+$wb['btn_cancel_txt'] = '返回';
+?>
+
+
+--|admin|cn|cn_groups.lng
+<?php
+$wb['description_txt'] = '描述';
+$wb['name_txt'] = '用户组';
+$wb['name_err'] = '用户组名必须在1-30个字符之间。';
+?>
+
+
+--|admin|cn|cn_language_export.lng
+<?php
+$wb['list_head_txt'] = '导出语言文件';
+$wb['language_select_txt'] = '选择语言文件';
+$wb['btn_save_txt'] = '导出所选语言文件的配置';
+$wb['btn_cancel_txt'] = '返回';
+?>
+
+
+--|admin|cn|cn_users.lng
+<?php
+$wb['username_txt'] = '用户名';
+$wb['username_err'] = '用户名太长或者含有非法字符串。';
+$wb['username_empty'] = '用户名为空。';
+$wb['username_unique'] = '用户名已经存在。';
+$wb['passwort_txt'] = '密码';
+$wb['password_strength_txt'] = '密码强度';
+$wb['modules_txt'] = '模块';
+$wb['startmodule_txt'] = '启动模块';
+$wb['app_theme_txt'] = '描述';
+$wb['typ_txt'] = '类型';
+$wb['active_txt'] = '激活';
+$wb['language_txt'] = '语言';
+$wb['name_txt'] = '名';
+$wb['vorname_txt'] = '姓';
+$wb['unternehmen_txt'] = '公司';
+$wb['strasse_txt'] = '街道';
+$wb['ort_txt'] = '城市';
+$wb['plz_txt'] = '邮编';
+$wb['land_txt'] = '国家';
+$wb['email_txt'] = '邮件';
+$wb['url_txt'] = '主页';
+$wb['telefon_txt'] = '电话';
+$wb['fax_txt'] = '传真';
+$wb['groups_txt'] = '用户组';
+$wb['default_group_txt'] = '默认用户组';
+$wb['startmodule_err'] = '默认启动模块不存在';
+?>
+
+
+--|admin|cn|cn_software_update_list.lng
+<?php
+$wb['list_head_txt'] = '软件更新管理';
+$wb['server_select_txt'] = '选择服务器';
+$wb['installed_txt'] = '执行';
+$wb['update_title_txt'] = '更新';
+$wb['version_txt'] = '版本';
+$wb['action_txt'] = '执行';
+?>
+
+
+--|admin|cn|cn_server_list.lng
+<?php
+$wb['list_head_txt'] = '服务器列表';
+$wb['server_name_txt'] = '服务器名';
+$wb['mail_server_txt'] = '邮件服务';
+$wb['web_server_txt'] = 'Web服务';
+$wb['dns_server_txt'] = 'DNS服务';
+$wb['file_server_txt'] = '文件服务';
+$wb['db_server_txt'] = '数据库服务';
+$wb['vserver_server_txt'] = '虚拟主机服务';
+$wb['add_new_record_txt'] = '增加新服务器';
+?>
+
+
+--|admin|cn|cn_firewall_list.lng
+<?php
+$wb['list_head_txt'] = '防火墙';
+$wb['active_txt'] = '激活';
+$wb['server_id_txt'] = '服务器';
+$wb['tcp_port_txt'] = '开启的TCP端口';
+$wb['udp_port_txt'] = '开启的UDB端口';
+$wb['add_new_record_txt'] = '增加防火墙规则';
+?>
+
+
+--|admin|cn|cn_firewall.lng
+<?php
+$wb['server_id_txt'] = '服务器';
+$wb['tcp_port_txt'] = '开启的TCP端口';
+$wb['udp_port_txt'] = '开启的UDP端口';
+$wb['tcp_port_help_txt'] = '逗号分隔';
+$wb['udp_port_help_txt'] = '逗号分隔';
+$wb['active_txt'] = '激活';
+$wb['firewall_error_unique'] = '防火墙规则已经存在。';
+?>
+
+
+--|admin|cn|cn_language_edit.lng
+<?php
+$wb['list_head_txt'] = '语言文件编辑器';
+$wb['language_select_txt'] = '选择语言';
+$wb['module_txt'] = '模块';
+$wb['lang_file_txt'] = '语言文件';
+$wb['btn_save_txt'] = '保存';
+$wb['btn_cancel_txt'] = '返回';
+?>
+
+
+--|admin|cn|cn_software_repo_list.lng
+<?php
+$wb['list_head_txt'] = 'ispconfig库';
+$wb['active_txt'] = '激活';
+$wb['repo_name_txt'] = 'ispconfig库';
+$wb['repo_url_txt'] = '地址';
+?>
+
+
+--|admin|cn|cn.lng
+<?php
+$wb['1001'] = '用户名或密码为空.';
+$wb['1002'] = '用户名或密码错误.';
+$wb['Firewall'] = '防火墙';
+$wb['Groups'] = '用户组';
+$wb['groups_description'] = 'Form to edit systemuser groups.';
+$wb['Server'] = '服务器';
+$wb['Services'] = '系统服务';
+$wb['Config'] = '配置';
+$wb['Server Config'] = '服务器配置';
+$wb['Mail'] = '邮件';
+$wb['Getmail'] = 'Getmail';
+$wb['Web'] = '网页';
+$wb['FastCGI'] = 'FastCGI';
+$wb['Jailkit'] = 'Jailkit';
+$wb['System'] = '系统';
+$wb['Add user'] = '添加用户';
+$wb['Edit user'] = '编辑用户';
+$wb['CP Users'] = '控制面板用户';
+$wb['Add group'] = '添加用户组';
+$wb['Edit group'] = '编辑用户组';
+$wb['Edit server'] = '编辑服务器';
+$wb['Edit Server IP'] = '编辑服务器IP';
+$wb['Servers'] = '服务器管理';
+$wb['Interface Config'] = '服务器配置';
+$wb['Sync. Now'] = '立即更新系统';
+$wb['DB Sync.'] = '立即更新数据库';
+$wb['Packages'] = '软件包';
+$wb['Updates'] = '更新';
+$wb['Languages'] = '语言';
+$wb['New Language'] = '添加新语言';
+$wb['Export'] = '导出';
+$wb['Import'] = '导入';
+$wb['Language Editor'] = '编辑语言';
+$wb['Software'] = '软件';
+$wb['Repositories'] = '信息库';
+$wb['Merge'] = '合并';
+$wb['Client'] = '客户';
+$wb['Email'] = '邮件';
+$wb['Monitor'] = '监控';
+$wb['Sites'] = '网站';
+$wb['DNS'] = '域名';
+$wb['Tools'] = '工具';
+$wb['Help'] = '帮助';
+?>
+
+
+--|admin|cn|cn_language_add.lng
+<?php
+$wb['list_head_txt'] = '增加新语言';
+$wb['language_select_txt'] = '选择语言源';
+$wb['language_new_txt'] = '新语言';
+$wb['language_new_hint_txt'] = '两个半角英文字母';
+$wb['btn_save_txt'] = '建立新语言文件设置';
+$wb['btn_cancel_txt'] = '返回';
+?>
+
+
+--|admin|cn|cn_server.lng
+<?php
+$wb['config_txt'] = '配置';
+$wb['server_name_txt'] = '服务器名';
+$wb['mail_server_txt'] = '电子邮件服务器';
+$wb['web_server_txt'] = 'WEB服务器';
+$wb['dns_server_txt'] = 'DNS服务器';
+$wb['file_server_txt'] = '文件服务器';
+$wb['db_server_txt'] = '数据库服务器';
+$wb['vserver_server_txt'] = 'VServer服务器';
+$wb['active_txt'] = '激活';
+?>
+
+
+--|admin|cn|cn_server_config.lng
+<?php
+$wb['jailkit_chroot_home_txt'] = 'Jailkit chroot根目录';
+$wb['jailkit_chroot_app_sections_txt'] = 'Jailkit chroot应用池';
+$wb['jailkit_chroot_app_programs_txt'] = 'Jailkit chrooted应用';
+$wb['website_path_txt'] = '站点路径';
+$wb['website_symlinks_txt'] = '站点连接';
+$wb['website_basedir_txt'] = '站点主目录';
+$wb['vhost_conf_dir_txt'] = '虚拟主机控制目录';
+$wb['vhost_conf_enabled_dir_txt'] = '虚拟主机启用的控制目录';
+$wb['getmail_config_dir_txt'] = 'Getmail控制目录';
+$wb['fastcgi_starter_path_txt'] = 'FastCGI启动脚本目录';
+$wb['fastcgi_starter_script_txt'] = 'FastCGI启动脚本';
+$wb['fastcgi_alias_txt'] = 'FastCGI别名';
+$wb['fastcgi_phpini_path_txt'] = 'FastCGI php.ini路径';
+$wb['fastcgi_children_txt'] = 'FastCGI子进程';
+$wb['fastcgi_max_requests_txt'] = 'FastCGI 最大请求数';
+$wb['fastcgi_bin_txt'] = 'FastCGI Bin';
+$wb['module_txt'] = '模块';
+$wb['maildir_path_txt'] = '邮件列表路径';
+$wb['homedir_path_txt'] = '根目录路径';
+$wb['mailuser_uid_txt'] = '邮箱用户UID';
+$wb['mailuser_gid_txt'] = '邮箱用户GID';
+$wb['mailuser_name_txt'] = '邮箱用户名称';
+$wb['mailuser_group_txt'] = '邮箱用户组';
+$wb['relayhost_txt'] = '中继主机';
+$wb['relayhost_user_txt'] = '中继主机用户';
+$wb['relayhost_password_txt'] = '中继主机密码';
+$wb['mailbox_size_limit_txt'] = '邮箱尺寸限制';
+$wb['message_size_limit_txt'] = '邮件大小限制';
+$wb['ip_address_txt'] = 'IP地址';
+$wb['netmask_txt'] = '子网掩码';
+$wb['gateway_txt'] = '网关';
+$wb['hostname_txt'] = '主机名';
+$wb['nameservers_txt'] = '域名服务器';
+$wb['auto_network_configuration_txt'] = '网络配置';
+$wb['ip_address_error_wrong'] = '非法的IP地址格式。';
+$wb['netmask_error_wrong'] = '非法的子网掩码格式。';
+$wb['gateway_error_wrong'] = '非法的网关格式。';
+$wb['hostname_error_empty'] = '主机名为空。';
+$wb['nameservers_error_empty'] = '域名服务器为空。';
+?>
+
+
+--|admin|cn|cn_server_ip.lng
+<?php
+$wb['server_id_txt'] = '服务器';
+$wb['ip_address_txt'] = 'IP地址';
+$wb['virtualhost_txt'] = '基于域名的虚拟主机';
+$wb['ip_err'] = 'IP地址无效';
+?>
+
+
+--|admin|cn|cn_server_ip_list.lng
+<?php
+$wb['list_head_txt'] = 'IP地址列表';
+$wb['server_id_txt'] = '服务器';
+$wb['ip_address_txt'] = 'IP地址';
+$wb['add_new_record_txt'] = '添加新IP';
+?>
+
+
+--|admin|cn|cn_server_config_list.lng
+<?php
+$wb['list_head_txt'] = '服务器配置';
+$wb['server_name_txt'] = '服务器名';
+?>
+
+
+--|sites|cn|cn_web_domain_list.lng
+<?php
+$wb['list_head_txt'] = '网站列表';
+$wb['domain_id_txt'] = 'ID';
+$wb['active_txt'] = '激活';
+$wb['server_id_txt'] = '服务器';
+$wb['domain_txt'] = '域名';
+$wb['add_new_record_txt'] = '增加网站';
+?>
+
+
+--|sites|cn|cn_ftp_user_list.lng
+<?php
+$wb['list_head_txt'] = 'FTP用户';
+$wb['active_txt'] = '激活';
+$wb['server_id_txt'] = '服务器';
+$wb['parent_domain_id_txt'] = '网站';
+$wb['username_txt'] = '用户名';
+$wb['add_new_record_txt'] = '增加FTP帐号';
+?>
+
+
+--|sites|cn|cn_web_aliasdomain_list.lng
+<?php
+$wb['list_head_txt'] = '域名别名';
+$wb['active_txt'] = '激活';
+$wb['server_id_txt'] = '服务器';
+$wb['parent_domain_id_txt'] = '网站';
+$wb['domain_txt'] = '域名别名';
+$wb['add_new_record_txt'] = '添加域名别名';
+$wb['domain_error_empty'] = '域名不得为空';
+$wb['domain_error_unique'] = '域名必须是唯一的。';
+$wb['domain_error_regex'] = '域名无效。';
+?>
+
+
+--|sites|cn|cn_ftp_user.lng
+<?php
+$wb['uid_txt'] = '用户名';
+$wb['gid_txt'] = '用户组';
+$wb['dir_txt'] = '目录';
+$wb['quota_files_txt'] = '文件配额';
+$wb['quota_files_unity_txt'] = '文件';
+$wb['ul_ratio_txt'] = '上传速度';
+$wb['dl_ratio_txt'] = '下载速度';
+$wb['ul_bandwidth_txt'] = '上传带宽';
+$wb['dl_bandwidth_txt'] = '下载带宽';
+$wb['server_id_txt'] = '服务器';
+$wb['parent_domain_id_txt'] = '网站';
+$wb['username_txt'] = '用户名';
+$wb['password_txt'] = '密码';
+$wb['password_strength_txt'] = '密码强度';
+$wb['quota_size_txt'] = '磁盘配额';
+$wb['active_txt'] = '激活';
+$wb['limit_ftp_user_txt'] = '您的帐号已经达到最大FTP用户数。';
+$wb['username_error_empty'] = '用户名为空。';
+$wb['username_error_unique'] = '用户名必须是唯一的。';
+$wb['username_error_regex'] = '用户名含有非法内容。';
+$wb['quota_size_error_empty'] = '配额是空的。';
+$wb['uid_error_empty'] = 'GID 为空.';
+$wb['directory_error_empty'] = '目录为空。';
+?>
+
+
+--|sites|cn|cn_database_list.lng
+<?php
+$wb['list_head_txt'] = '数据库';
+$wb['active_txt'] = '激活';
+$wb['remote_access_txt'] = '远程访问';
+$wb['server_id_txt'] = '服务器';
+$wb['database_name_txt'] = '数据库名';
+$wb['add_new_record_txt'] = '增加新数据库';
+?>
+
+
+--|sites|cn|cn_web_subdomain.lng
+<?php
+$wb['ssl_state_txt'] = '状态';
+$wb['ssl_locality_txt'] = '地理位置';
+$wb['ssl_organisation_txt'] = '组织';
+$wb['ssl_organisation_unit_txt'] = '组织单位';
+$wb['ssl_country_txt'] = '国家';
+$wb['ssl_request_txt'] = 'SSL请求';
+$wb['ssl_cert_txt'] = 'SSL 证书';
+$wb['ssl_bundle_txt'] = 'SSL包';
+$wb['ssl_action_txt'] = 'SSL行为';
+$wb['server_id_txt'] = '服务器';
+$wb['domain_txt'] = '域名';
+$wb['type_txt'] = '类型';
+$wb['parent_domain_id_txt'] = '父网站';
+$wb['redirect_type_txt'] = '重定向类型';
+$wb['redirect_path_txt'] = '重定向路径';
+$wb['active_txt'] = '激活';
+$wb['document_root_txt'] = '主目录';
+$wb['system_user_txt'] = 'Linux用户';
+$wb['system_group_txt'] = 'Linux用户组';
+$wb['ip_address_txt'] = 'IP地址';
+$wb['vhost_type_txt'] = '虚拟主机类型';
+$wb['hd_quota_txt'] = '磁盘配额';
+$wb['traffic_quota_txt'] = '流量配额';
+$wb['cgi_txt'] = 'CGI';
+$wb['ssi_txt'] = 'SSI';
+$wb['ssl_txt'] = 'SSL';
+$wb['suexec_txt'] = 'SuEXEC';
+$wb['php_txt'] = 'PHP';
+$wb['client_txt'] = '用户';
+$wb['limit_web_domain_txt'] = '您的帐户已经达到最大网站域名数。';
+$wb['limit_web_aliasdomain_txt'] = '您的帐号已经达到最大域名别名数。';
+$wb['limit_web_subdomain_txt'] = '您的帐号已经达到最大二级网站数。';
+$wb['apache_directives_txt'] = 'Apache状态';
+$wb['domain_error_empty'] = '域名为空';
+$wb['domain_error_unique'] = '可能有网站、二级域名或者别名与您的域名重复';
+$wb['domain_error_regex'] = '非法域名';
+$wb['host_txt'] = '主机';
+?>
+
+
+--|sites|cn|cn_web_subdomain_list.lng
+<?php
+$wb['list_head_txt'] = '子域名';
+$wb['active_txt'] = '激活';
+$wb['server_id_txt'] = '服务器';
+$wb['parent_domain_id_txt'] = '网站';
+$wb['domain_txt'] = '子域名';
+$wb['add_new_record_txt'] = '添加子域名';
+?>
+
+
+--|sites|cn|cn.lng
+<?php
+$wb['Database'] = '数据库';
+$wb['Options'] = '选项';
+$wb['Shell User'] = 'Shell用户';
+$wb['Domain'] = '站点';
+$wb['Redirect'] = '重定向';
+$wb['SSL'] = 'SSL';
+$wb['Subdomain'] = '二级域名';
+$wb['Sites'] = '网站';
+$wb['Aliasdomain'] = '域名别名';
+$wb['FTP-User'] = 'FTP用户';
+$wb['FTP'] = 'FTP';
+$wb['Shell-User'] = 'Shell用户';
+$wb['Shell'] = 'Shell';
+$wb['Websites'] = '网站';
+$wb['Stats'] = '统计';
+$wb['System'] = '系统';
+$wb['Client'] = '客户';
+$wb['Email'] = '邮件';
+$wb['Monitor'] = '监控';
+$wb['DNS'] = '域名';
+$wb['Tools'] = '工具';
+$wb['Help'] = '帮助';
+?>
+
+
+--|sites|cn|cn_database.lng
+<?php
+$wb['server_id_txt'] = '服务器';
+$wb['type_txt'] = '类型';
+$wb['database_name_txt'] = '数据库名';
+$wb['database_user_txt'] = '数据库用户';
+$wb['database_password_txt'] = '数据库密码';
+$wb['password_strength_txt'] = '密码强度';
+$wb['database_charset_txt'] = '数据库默认编码';
+$wb['remote_access_txt'] = '远程访问';
+$wb['client_txt'] = '用户';
+$wb['active_txt'] = '激活';
+$wb['database_name_error_empty'] = '数据库名为空。';
+$wb['database_name_error_unique'] = '数据库名已经存在，为防止数据库名重复，可将您的域名作为您数据库名前缀。';
+$wb['database_name_error_regex'] = '数据库名错误，数据库名仅能使用以下字符：a-z,A-Z,0-9，长度在2-64个字符之间。';
+$wb['database_user_error_empty'] = '数据库用户名为空。';
+$wb['database_user_error_unique'] = '数据库用户名已经存在，为了避免重复，您可以将您的域名作为您的数据库用户名的前缀。';
+$wb['database_user_error_regex'] = '数据库用户名错误，数据库用户名仅能使用以下字符：a-z，A-Z，0-9，长度在2-64个字符之间。';
+$wb['limit_database_txt'] = '已经达到最大数据库数。';
+$wb['database_name_change_txt'] = '不能更改数据库名。';
+$wb['database_charset_change_txt'] = '数据库默认编码不能更改。';
+?>
+
+
+--|sites|cn|cn_web_domain.lng
+<?php
+$wb['ssl_state_txt'] = '状态';
+$wb['ssl_locality_txt'] = '地理位置';
+$wb['ssl_organisation_txt'] = '组织';
+$wb['ssl_organisation_unit_txt'] = '组织单位';
+$wb['ssl_country_txt'] = '国家';
+$wb['ssl_request_txt'] = 'SSL请求';
+$wb['ssl_cert_txt'] = 'SSL证书';
+$wb['ssl_bundle_txt'] = 'SSL 包';
+$wb['ssl_action_txt'] = 'SSL行为';
+$wb['server_id_txt'] = '服务器';
+$wb['domain_txt'] = '域名';
+$wb['type_txt'] = '类型';
+$wb['parent_domain_id_txt'] = '父网站';
+$wb['redirect_type_txt'] = '重定向类型';
+$wb['redirect_path_txt'] = '重定向路径';
+$wb['active_txt'] = '激活';
+$wb['document_root_txt'] = '主目录';
+$wb['system_user_txt'] = 'Linux用户';
+$wb['system_group_txt'] = 'Linux用户组';
+$wb['ip_address_txt'] = 'IP地址';
+$wb['vhost_type_txt'] = '虚拟主机类型';
+$wb['hd_quota_txt'] = '磁盘配额';
+$wb['traffic_quota_txt'] = '流量配额';
+$wb['cgi_txt'] = 'CGI';
+$wb['ssi_txt'] = 'SSI';
+$wb['errordocs_txt'] = '其定义错误页面';
+$wb['subdomain_txt'] = '默认二级域名';
+$wb['ssl_txt'] = 'SSL';
+$wb['suexec_txt'] = 'SuEXEC';
+$wb['php_txt'] = 'PHP';
+$wb['client_txt'] = '用户';
+$wb['limit_web_domain_txt'] = '您已经达到了最大域名数！如有需要，请联系管理员购买！';
+$wb['limit_web_aliasdomain_txt'] = '您的域名别名数已经达到最大。';
+$wb['limit_web_subdomain_txt'] = '你的子域数目已经达到最大！';
+$wb['apache_directives_txt'] = 'Apache目录';
+$wb['domain_error_empty'] = '域名为空';
+$wb['domain_error_unique'] = '已经存在相同的记录';
+$wb['domain_error_regex'] = '域名格式不合法';
+$wb['hd_quota_error_empty'] = '硬盘配额是空的。';
+$wb['traffic_quota_error_empty'] = '流量配额是空的。';
+$wb['error_ssl_state_empty'] = 'SSL状态是空的。';
+$wb['error_ssl_locality_empty'] = 'SSL位置是空的。';
+$wb['error_ssl_organisation_empty'] = 'SSL组织是空的。';
+$wb['error_ssl_organisation_unit_empty'] = 'SSL组织单位是空的。';
+$wb['error_ssl_country_empty'] = 'SSL国家是空的。';
+$wb['client_group_id_txt'] = '用户';
+$wb['stats_password_txt'] = '网站日志密码';
+?>
+
+
+--|sites|cn|cn_shell_user_list.lng
+<?php
+$wb['list_head_txt'] = 'Shell用户';
+$wb['active_txt'] = '激活';
+$wb['server_id_txt'] = '服务器';
+$wb['parent_domain_id_txt'] = '网站';
+$wb['username_txt'] = '用户名';
+$wb['add_new_record_txt'] = '添加新Shell帐号';
+?>
+
+
+--|sites|cn|cn_shell_user.lng
+<?php
+$wb['uid_txt'] = 'Web用户';
+$wb['gid_txt'] = '组';
+$wb['shell_txt'] = 'Shell';
+$wb['dir_txt'] = 'Dir';
+$wb['server_id_txt'] = '服务器';
+$wb['parent_domain_id_txt'] = '站点';
+$wb['username_txt'] = '用户名';
+$wb['password_txt'] = '密码';
+$wb['password_strength_txt'] = '密码强度';
+$wb['chroot_txt'] = 'Chroot Shell';
+$wb['quota_size_txt'] = '配额';
+$wb['active_txt'] = '激活';
+$wb['username_error_empty'] = '用户名为空';
+$wb['username_error_unique'] = '用户名必须是唯一的。';
+$wb['username_error_regex'] = '用户名包含非法字符';
+$wb['quota_size_error_empty'] = '配额为空';
+$wb['uid_error_empty'] = '用户组为空';
+$wb['directory_error_empty'] = '目录为空';
+$wb['limit_shell_user_txt'] = '已经达到最大Shell帐户数目';
+?>
+
+
+--|login|cn|cn.lng
+<?php
+$wb['1001'] = '用户名或密码为空。';
+$wb['1002'] = '用户名或密码错误。';
+$wb['1003'] = '用户已经被禁止。';
+$wb['1004'] = '登陆错误次数太多，请15分钟后重试。';
+$wb['pass_reset_txt'] = '如果您的用户名和电子邮件与您的帐号相匹配，将生成新密码并发送到你的电子邮箱内。';
+$wb['pw_reset'] = '新密码已经发送到您的电子邮箱内。';
+$wb['pw_error'] = '用户名或者电子邮箱地址错误。';
+$wb['pw_error_noinput'] = '请输入电子邮箱和用户名。';
+$wb['pw_reset_mail_msg'] = '您的控制面板密码已经重置，新密码是：';
+$wb['pw_reset_mail_title'] = '控制面板密码已经重置。';
+$wb['user_regex_error'] = '用户名含有非法字符或者超过64个字节。';
+$wb['pw_error_length'] = '密码长度大于64个字节';
+?>
+
+
+--|mail|cn|cn_mail_transport_list.lng
+<?php
+$wb['list_head_txt'] = '高级邮件路由';
+$wb['active_txt'] = '激活';
+$wb['server_id_txt'] = '服务器';
+$wb['domain_txt'] = '域名';
+$wb['transport_txt'] = '传输';
+$wb['sort_order_txt'] = '排序依据';
+$wb['add_new_record_txt'] = '增加新传输';
+?>
+
+
+--|mail|cn|cn_spamfilter_config.lng
+<?php
+$wb['getmail_config_dir_txt'] = 'Getmail配置路径';
+$wb['ip_address_txt'] = 'IP地址';
+$wb['netmask_txt'] = '子网掩码';
+$wb['gateway_txt'] = '网关';
+$wb['hostname_txt'] = '主机名';
+$wb['nameservers_txt'] = '域名服务器';
+$wb['module_txt'] = '服务器模块';
+$wb['maildir_path_txt'] = '邮件列表路径';
+$wb['homedir_path_txt'] = '主目录路径';
+$wb['mailuser_uid_txt'] = '邮件用户UID';
+$wb['mailuser_gid_txt'] = '邮件用户GID';
+$wb['mailuser_name_txt'] = '邮件用户名称';
+$wb['mailuser_group_txt'] = '邮件用户组';
+$wb['relayhost_txt'] = '中继主机';
+$wb['relayhost_user_txt'] = '中继主机用户';
+$wb['relayhost_password_txt'] = '中继主机密码';
+$wb['mailbox_size_limit_txt'] = '邮箱尺寸限制';
+$wb['message_size_limit_txt'] = '邮件尺寸限制';
+?>
+
+
+--|mail|cn|cn_spamfilter_policy_list.lng
+<?php
+$wb['list_head_txt'] = '垃圾邮件过滤策略';
+$wb['policy_name_txt'] = '策略名称';
+$wb['virus_lover_txt'] = '病毒爱好者';
+$wb['spam_lover_txt'] = '垃圾邮件爱好者';
+$wb['banned_files_lover_txt'] = '违禁文件爱好者';
+$wb['bad_header_lover_txt'] = '坏头爱好者';
+$wb['add_new_record_txt'] = '添加策略记录';
+?>
+
+
+--|mail|cn|cn_spamfilter_blacklist_list.lng
+<?php
+$wb['list_head_txt'] = '垃圾邮件过滤黑名单';
+$wb['active_txt'] = '激活';
+$wb['server_id_txt'] = '服务器';
+$wb['priority_txt'] = '优先级';
+$wb['rid_txt'] = '用户';
+$wb['email_txt'] = '黑名单电子邮件地址';
+$wb['add_new_record_txt'] = '增加黑名单记录';
+?>
+
+
+--|mail|cn|cn_mail_user_list.lng
+<?php
+$wb['list_head_txt'] = '邮箱';
+$wb['email_txt'] = '邮件';
+$wb['autoresponder_txt'] = '自动应答';
+$wb['add_new_record_txt'] = '增加邮箱';
+?>
+
+
+--|mail|cn|cn_mail_user_filter.lng
+<?php
+$wb['rulename_txt'] = '名称';
+$wb['action_txt'] = '执行';
+$wb['target_txt'] = '文件夹';
+$wb['active_txt'] = '激活';
+$wb['rulename_error_empty'] = '名称为空。';
+$wb['searchterm_is_empty'] = '搜索关键字为空。';
+$wb['source_txt'] = '来源';
+?>
+
+
+--|mail|cn|cn_mail_get_list.lng
+<?php
+$wb['list_head_txt'] = '从外部POP3 / IMAP服务器收取邮件';
+$wb['active_txt'] = '激活';
+$wb['server_id_txt'] = '服务器';
+$wb['source_server_txt'] = '外部服务器';
+$wb['source_username_txt'] = '用户名';
+$wb['destination_txt'] = '目的地';
+$wb['add_new_record_txt'] = '增加新帐号';
+?>
+
+
+--|mail|cn|cn_mail_domain_catchall.lng
+<?php
+$wb['domain_txt'] = '域名';
+$wb['destination_txt'] = '目的地';
+$wb['active_txt'] = '激活';
+$wb['domain_error_unique'] = '这个域名已经有了默认收取帐号。';
+$wb['no_domain_perm'] = '您无权操作此域名';
+$wb['domain_error_regex'] = '域名中含有非法字符。';
+$wb['limit_mailcatchall_txt'] = '默认邮件抓取帐号数已经达到最大。';
+?>
+
+
+--|mail|cn|cn_mail_alias_list.lng
+<?php
+$wb['list_head_txt'] = '邮件别名';
+$wb['active_txt'] = '激活';
+$wb['source_txt'] = '来源';
+$wb['destination_txt'] = '目的地';
+$wb['email_txt'] = '邮件';
+$wb['add_new_record_txt'] = '增加邮件别名';
+?>
+
+
+--|mail|cn|cn_spamfilter_users.lng
+<?php
+$wb['server_id_txt'] = '服务器';
+$wb['priority_txt'] = '优先级';
+$wb['policy_id_txt'] = '策略';
+$wb['email_txt'] = '电子邮件（模式）';
+$wb['fullname_txt'] = '名称';
+$wb['local_txt'] = '本地';
+?>
+
+
+--|mail|cn|cn_mail_blacklist_list.lng
+<?php
+$wb['list_head_txt'] = '电子邮件黑名单';
+$wb['active_txt'] = '激活';
+$wb['server_id_txt'] = '服务器';
+$wb['source_txt'] = '黑名单地址';
+$wb['type_txt'] = '类型';
+$wb['recipient_txt'] = '收件人';
+$wb['add_new_record_txt'] = '增加一个黑名单记录';
+$wb['access_txt'] = '访问';
+?>
+
+
+--|mail|cn|cn_mail_spamfilter_list.lng
+<?php
+$wb['list_head_txt'] = '垃圾邮件过滤';
+$wb['active_txt'] = '激活';
+$wb['server_id_txt'] = '服务器';
+$wb['server_name_txt'] = '服务器名';
+$wb['email_txt'] = '邮件';
+$wb['add_new_record_txt'] = '增加一个新的垃圾邮件过滤记录';
+?>
+
+
+--|mail|cn|cn_mail_domain.lng
+<?php
+$wb['server_id_txt'] = '服务器';
+$wb['domain_txt'] = '域名';
+$wb['type_txt'] = '类型';
+$wb['active_txt'] = '激活';
+$wb['domain_error_empty'] = '域名为空。';
+$wb['domain_error_unique'] = '域名重复。';
+$wb['domain_error_regex'] = '域名不许可。';
+$wb['client_txt'] = '用户';
+$wb['limit_maildomain_txt'] = '电子邮件域名数已经达到最大。';
+$wb['policy_txt'] = '垃圾邮件过滤';
+$wb['no_policy'] = '- 不启用 -';
+?>
+
+
+--|mail|cn|cn_spamfilter_config_list.lng
+<?php
+$wb['list_head_txt'] = '服务器配置';
+$wb['server_name_txt'] = '服务器';
+$wb['server_id_txt'] = '服务器ID';
+?>
+
+
+--|mail|cn|cn_mail_user.lng
+<?php
+$wb['custom_mailfilter_txt'] = '自定义邮件筛选方案';
+$wb['email_txt'] = '邮件';
+$wb['cryptpwd_txt'] = '密码';
+$wb['password_strength_txt'] = '密码强度';
+$wb['active_txt'] = '激活';
+$wb['email_error_isemail'] = '不被许可的邮件地址。';
+$wb['email_error_unique'] = '重复的电子邮件地址。';
+$wb['autoresponder_text_txt'] = '文本';
+$wb['autoresponder_txt'] = '自动应答';
+$wb['no_domain_perm'] = '你无权操作此域名';
+$wb['error_no_pwd'] = '密码为空。';
+$wb['quota_error_isint'] = '邮箱容量必须为数字。';
+$wb['quota_txt'] = '磁盘配额';
+$wb['server_id_txt'] = '服务器ID';
+$wb['password_txt'] = '密码';
+$wb['maildir_txt'] = '邮件目录';
+$wb['postfix_txt'] = '启用接收';
+$wb['access_txt'] = '启用获取';
+$wb['policy_txt'] = '垃圾邮件过滤';
+$wb['no_policy'] = '- 禁用 -';
+$wb['limit_mailbox_txt'] = '您的帐号已经达到最大邮箱数。';
+$wb['limit_mailquota_txt'] = '您的邮箱已经达到最大磁盘配额！您的邮箱最大MB数是：';
+$wb['welcome_mail_fromname_txt'] = 'ISPConfig3';
+$wb['welcome_mail_fromemail_txt'] = 'webmaster@localhost.tld';
+$wb['welcome_mail_subject'] = '欢迎来使用邮件系统';
+$wb['welcome_mail_message'] = '欢迎使用邮件系统。管理员。';
+$wb['disableimap_txt'] = '禁止IMAP';
+$wb['disablepop3_txt'] = '禁止POP3';
+?>
+
+
+--|mail|cn|cn_mail_domain_list.lng
+<?php
+$wb['list_head_txt'] = '电子邮件域名';
+$wb['server_id_txt'] = '服务器';
+$wb['domain_txt'] = '域名';
+$wb['add_new_record_txt'] = '增加新域名';
+$wb['active_txt'] = '激活';
+?>
+
+
+--|mail|cn|cn_spamfilter_blacklist.lng
+<?php
+$wb['server_id_txt'] = '服务器';
+$wb['wb_txt'] = 'wb';
+$wb['rid_txt'] = '用户';
+$wb['email_txt'] = '邮件';
+$wb['priority_txt'] = '优先级';
+$wb['active_txt'] = '激活';
+?>
+
+
+--|mail|cn|cn_mail_get.lng
+<?php
+$wb['server_id_txt'] = '服务器';
+$wb['type_txt'] = '类型';
+$wb['source_server_txt'] = 'Pop3/Imap服务器';
+$wb['source_username_txt'] = '用户名';
+$wb['source_password_txt'] = '密码';
+$wb['source_delete_txt'] = '检索后删除邮件';
+$wb['destination_txt'] = '目的地';
+$wb['active_txt'] = '激活';
+$wb['limit_fetchmail_txt'] = 'fetchmail邮件数已经达到最大！';
+$wb['source_server_error_isempty'] = '服务器为空。';
+$wb['source_username_error_isempty'] = '用户名为空。';
+$wb['source_password_error_isempty'] = '密码为空。';
+$wb['destination_error_isemail'] = '请选择目的地';
+?>
+
+
+--|mail|cn|cn_mail_blacklist.lng
+<?php
+$wb['server_id_txt'] = '服务器';
+$wb['source_txt'] = '黑名单地址';
+$wb['recipient_txt'] = '收件人';
+$wb['active_txt'] = '激活';
+$wb['source_error_notempty'] = '地址为空';
+$wb['type_txt'] = '类型';
+$wb['limit_mailfilter_txt'] = '您的帐号已经达到最高垃圾邮件黑名单数。';
+?>
+
+
+--|mail|cn|cn_mail_content_filter_list.lng
+<?php
+$wb['list_head_txt'] = 'Postfix过滤';
+$wb['active_txt'] = '激活';
+$wb['server_id_txt'] = '服务器';
+$wb['pattern_txt'] = '模式';
+$wb['action_txt'] = '执行';
+$wb['add_new_record_txt'] = '增加新内容过滤';
+?>
+
+
+--|mail|cn|cn_mail_whitelist_list.lng
+<?php
+$wb['list_head_txt'] = '邮件白名单';
+$wb['active_txt'] = '激活';
+$wb['server_id_txt'] = '服务器';
+$wb['source_txt'] = '白名单地址';
+$wb['type_txt'] = '类型';
+$wb['recipient_txt'] = '收件人';
+$wb['add_new_record_txt'] = '添加白名单记录';
+$wb['access_txt'] = '访问许可';
+?>
+
+
+--|mail|cn|cn_mail_domain_catchall_list.lng
+<?php
+$wb['list_head_txt'] = '邮件抓取';
+$wb['active_txt'] = '激活';
+$wb['source_txt'] = '来源';
+$wb['destination_txt'] = '目的地的电子邮件地址';
+$wb['server_id_txt'] = '服务器';
+$wb['domain_txt'] = '域名';
+$wb['add_new_record_txt'] = '增加抓取邮件';
+?>
+
+
+--|mail|cn|cn_mail_transport.lng
+<?php
+$wb['server_id_txt'] = '服务器';
+$wb['domain_txt'] = '域名';
+$wb['destination_txt'] = '描述';
+$wb['type_txt'] = '类型';
+$wb['mx_txt'] = 'XM信息查找失败';
+$wb['sort_order_txt'] = '排序依据';
+$wb['active_txt'] = '激活';
+$wb['limit_mailrouting_txt'] = '你的帐户已经达到最大路由数。';
+?>
+
+
+--|mail|cn|cn_mail_content_filter.lng
+<?php
+$wb['server_id_txt'] = '服务器';
+$wb['type_txt'] = '过滤';
+$wb['pattern_txt'] = '正则模式';
+$wb['data_txt'] = '数据';
+$wb['action_txt'] = '执行';
+$wb['active_txt'] = '激活';
+$wb['pattern_error_empty'] = '模式为空。';
+?>
+
+
+--|mail|cn|cn_spamfilter_whitelist.lng
+<?php
+$wb['server_id_txt'] = '服务器';
+$wb['wb_txt'] = 'wb';
+$wb['rid_txt'] = '用户';
+$wb['email_txt'] = '邮件';
+$wb['priority_txt'] = '优先级';
+$wb['active_txt'] = '激活';
+?>
+
+
+--|mail|cn|cn_spamfilter_policy.lng
+<?php
+$wb['policy_name_txt'] = '策略名称';
+$wb['virus_lover_txt'] = '病毒邮件爱好者';
+$wb['spam_lover_txt'] = '垃圾邮件爱好者';
+$wb['banned_files_lover_txt'] = '违禁邮件爱好者';
+$wb['bad_header_lover_txt'] = '坏头爱好者';
+$wb['bypass_virus_checks_txt'] = '忽略病毒检查';
+$wb['bypass_banned_checks_txt'] = '忽略违禁邮件检查';
+$wb['bypass_header_checks_txt'] = '忽略头邮件检查';
+$wb['virus_quarantine_to_txt'] = '转发病毒邮件到';
+$wb['spam_quarantine_to_txt'] = '转发垃圾邮件到';
+$wb['banned_quarantine_to_txt'] = '转发违禁邮件到';
+$wb['bad_header_quarantine_to_txt'] = '转发坏头邮件到';
+$wb['clean_quarantine_to_txt'] = '转发干净邮件到';
+$wb['other_quarantine_to_txt'] = '转发其他邮件到';
+$wb['spam_tag_level_txt'] = '垃圾邮件级别标记';
+$wb['spam_tag2_level_txt'] = '垃圾邮件级别标记2';
+$wb['spam_kill_level_txt'] = '垃圾邮件删除级别';
+$wb['spam_dsn_cutoff_level_txt'] = '垃圾邮件DNS拦截级别';
+$wb['spam_quarantine_cutoff_level_txt'] = '垃圾邮件隔离级别';
+$wb['spam_modifies_subj_txt'] = '垃圾邮件修改标题';
+$wb['spam_subject_tag_txt'] = '垃圾邮件标题标记';
+$wb['spam_subject_tag2_txt'] = '垃圾邮件标题标记2';
+$wb['addr_extension_virus_txt'] = '病毒邮件延伸地址';
+$wb['addr_extension_spam_txt'] = '垃圾邮件延伸地址';
+$wb['addr_extension_banned_txt'] = '违禁邮件延伸地址';
+$wb['addr_extension_bad_header_txt'] = '坏头文件延伸地址';
+$wb['warnvirusrecip_txt'] = 'Warn virus recip.';
+$wb['warnbannedrecip_txt'] = 'Warn banned recip.';
+$wb['warnbadhrecip_txt'] = 'Warn bad header recip.';
+$wb['newvirus_admin_txt'] = '新病毒管理';
+$wb['virus_admin_txt'] = '病毒管理';
+$wb['banned_admin_txt'] = '违禁文件管理';
+$wb['bad_header_admin_txt'] = '坏头管理';
+$wb['spam_admin_txt'] = '垃圾邮件管理';
+$wb['message_size_limit_txt'] = '邮件大小限制';
+$wb['banned_rulenames_txt'] = '违禁邮件规则名';
+?>
+
+
+--|mail|cn|cn_mail_forward.lng
+<?php
+$wb['email_txt'] = '邮件';
+$wb['destination_txt'] = '目的地邮件';
+$wb['active_txt'] = '激活';
+$wb['limit_mailforward_txt'] = '邮件转发数已经达到最大。';
+?>
+
+
+--|mail|cn|cn_mail_forward_list.lng
+<?php
+$wb['list_head_txt'] = '邮件转向';
+$wb['active_txt'] = '激活';
+$wb['source_txt'] = '来源';
+$wb['destination_txt'] = '目的地';
+$wb['email_txt'] = '邮件';
+$wb['add_new_record_txt'] = '增加邮件转向';
+?>
+
+
+--|mail|cn|cn_mail_user_stats_list.lng
+<?php
+$wb['list_head_txt'] = '邮件流量';
+$wb['email_txt'] = '邮件';
+$wb['this_month_txt'] = '本月';
+$wb['last_month_txt'] = '上个月';
+$wb['this_year_txt'] = '本年';
+$wb['last_year_txt'] = '去年';
+?>
+
+
+--|mail|cn|cn.lng
+<?php
+$wb['Email Alias'] = '邮件别名';
+$wb['Email Blacklist'] = '邮件黑名单列表';
+$wb['Blacklist'] = '黑名单列表';
+$wb['Mail Content Filter'] = '电子邮件内容过滤';
+$wb['Filter'] = '过滤';
+$wb['Mail Domain'] = '电子邮件域名';
+$wb['Domain'] = '域名';
+$wb['Email Catchall'] = '域缺省接收账号';
+$wb['Email Forward'] = '电子邮件转发';
+$wb['Get Email'] = '收收件';
+$wb['Spamfilter'] = '垃圾邮件过滤';
+$wb['Email Routing'] = '邮件路由';
+$wb['Email transport'] = '电子邮件追踪';
+$wb['Mailbox'] = '邮箱';
+$wb['Autoresponder'] = '自动应答';
+$wb['Mail Filter'] = '邮件过滤';
+$wb['Custom Rules'] = '自定义规则';
+$wb['Email filter'] = '电子邮件过滤';
+$wb['Email Whitelist'] = '白名单';
+$wb['Whitelist'] = '白名单列表';
+$wb['Spamfilter blacklist'] = '垃圾邮件黑名单';
+$wb['Spamfilter Config'] = '垃圾邮件过滤配置';
+$wb['Server'] = '服务器';
+$wb['Spamfilter policy'] = '垃圾邮件过滤策略';
+$wb['Policy'] = '策略';
+$wb['Quarantine'] = '隔离';
+$wb['Tag-Level'] = '掌握级别';
+$wb['Other'] = '其他';
+$wb['Spamfilter users'] = '垃圾邮件过滤用户';
+$wb['Users'] = '用户';
+$wb['Spamfilter Whitelist'] = '垃圾邮件过滤白名单';
+$wb['邮件'] = '邮件';
+$wb['Email Mailbox'] = '电子邮箱';
+$wb['Email Accounts'] = '电子邮件帐号';
+$wb['User / Domain'] = '用户/域名';
+$wb['Server Settings'] = '服务器配置';
+$wb['Fetchmail'] = '收取邮件';
+$wb['Mailbox traffic'] = '电子邮箱流量';
+$wb['Statistics'] = '统计';
+$wb['Postfix Whitelist'] = 'Postfix白名单';
+$wb['Postfix Blacklist'] = 'Postfix 黑名单';
+$wb['Content Filter'] = '内容过滤';
+$wb['Global Filters'] = '全局过滤';
+$wb['System'] = '系统';
+$wb['Client'] = '客户';
+$wb['Email'] = '邮件';
+$wb['Monitor'] = '监控';
+$wb['Sites'] = '网站';
+$wb['DNS'] = '域名';
+$wb['Tools'] = '工具';
+$wb['Help'] = '帮助';
+?>
+
+
+--|mail|cn|cn_mail_spamfilter.lng
+<?php
+$wb['email_txt'] = '邮件';
+$wb['spam_rewrite_score_int_txt'] = '重写评分';
+$wb['spam_redirect_score_int_txt'] = '重定向评分';
+$wb['spam_delete_score_int_txt'] = '删除评分';
+$wb['spam_rewrite_subject_txt'] = '重写主题';
+$wb['spam_redirect_maildir_txt'] = '重定向信箱';
+$wb['active_txt'] = '激活';
+$wb['spam_rewrite_txt'] = '在这些评分之上时重新邮件标题。';
+$wb['spam_redirect_txt'] = '对于选定的邮箱超过这一评分将重定向';
+$wb['spam_delete_txt'] = '超过分数将删除邮件。';
+$wb['disable_txt'] = '提示：要禁用过滤选项，设置评分为0.00 。';
+$wb['email_error_isemail'] = '不被许可的电子邮箱地址。';
+$wb['email_error_unique'] = '这个电子邮件地址已经有存在了。';
+$wb['spam_redirect_maildir_purge_txt'] = 'Purge Maildir after';
+$wb['days_txt'] = '天。';
+?>
+
+
+--|mail|cn|cn_mail_alias.lng
+<?php
+$wb['email_txt'] = '邮件';
+$wb['destination_txt'] = '目的地';
+$wb['active_txt'] = '激活';
+$wb['email_error_isemail'] = '电子邮件地址无效。';
+$wb['email_error_unique'] = '重复的电子邮件地址。';
+$wb['no_domain_perm'] = '您无权管理此域名';
+$wb['destination_error_isemail'] = '目的地电子邮件地址无效。';
+$wb['limit_mailalias_txt'] = '您的帐户已经达到最大电子邮件别名数！';
+?>
+
+
+--|mail|cn|cn_spamfilter_users_list.lng
+<?php
+$wb['list_head_txt'] = '垃圾邮件过滤用户';
+$wb['local_txt'] = '本地';
+$wb['server_id_txt'] = '服务器';
+$wb['priority_txt'] = '优先级';
+$wb['policy_id_txt'] = '策略';
+$wb['fullname_txt'] = '名称';
+$wb['email_txt'] = '邮件';
+$wb['add_new_record_txt'] = '增加邮件过滤帐号';
+?>
+
+
+--|mail|cn|cn_mail_whitelist.lng
+<?php
+$wb['server_id_txt'] = '服务器';
+$wb['source_txt'] = '白名单地址列表';
+$wb['recipient_txt'] = '收件人';
+$wb['active_txt'] = '激活';
+$wb['source_error_notempty'] = '地址为空';
+$wb['type_txt'] = '类型';
+$wb['limit_mailfilter_txt'] = '您的帐户已经达到最大邮件过滤帐号数！';
+?>
+
+
+--|mail|cn|cn_mail_user_filter_list.lng
+<?php
+$wb['rulename_txt'] = '名称';
+$wb['add_new_record_txt'] = '添加过滤';
+$wb['page_txt'] = '页';
+$wb['page_of_txt'] = '/';
+?>
+
+
+--|mail|cn|cn_spamfilter_whitelist_list.lng
+<?php
+$wb['list_head_txt'] = '垃圾邮件过滤白名单';
+$wb['active_txt'] = '激活';
+$wb['server_id_txt'] = '服务器';
+$wb['priority_txt'] = '优先级';
+$wb['rid_txt'] = '用户';
+$wb['email_txt'] = '白名单电子邮件';
+$wb['add_new_record_txt'] = '增加白名单记录';
+?>
+
+
+--|tools|cn|cn_usersettings.lng
+<?php
+$wb['passwort_txt'] = '密码';
+$wb['password_strength_txt'] = '密码强度';
+$wb['language_txt'] = '选择默认语言';
+$wb['password_mismatch'] = '密码与确认密码不一致';
+$wb['Form to edit the user password and language.'] = '以下表单内容为编辑用户密码和语言的。';
+$wb['Settings'] = '设置';
+?>
+
+
+--|tools|cn|cn.lng
+<?php
+$wb['User Settings'] = '用户设置';
+$wb['Settings'] = '设置';
+$wb['ISPConfig Tools'] = 'ISPConfig 工具';
+$wb['Password and Language'] = '用户名和语言';
+$wb['System'] = '系统';
+$wb['Client'] = '客户';
+$wb['Email'] = '邮件';
+$wb['Monitor'] = '监控';
+$wb['Sites'] = '网站';
+$wb['DNS'] = '域名';
+$wb['Tools'] = '工具';
+$wb['Help'] = '帮助';
+?>
+
+
+--|monitor|cn|cn_datalog_list.lng
+<?php
+$wb['list_head_txt'] = '计划队列';
+$wb['tstamp_txt'] = '日期';
+$wb['server_id_txt'] = '服务器';
+$wb['dbtable_txt'] = '数据库表';
+$wb['action_txt'] = '执行';
+$wb['status_txt'] = '状态';
+?>
+
+
+--|monitor|cn|cn_syslog_list.lng
+<?php
+$wb['list_head_txt'] = '服务器管理系统日志';
+$wb['tstamp_txt'] = '日期';
+$wb['server_id_txt'] = '服务器';
+$wb['loglevel_txt'] = '日志级别';
+$wb['message_txt'] = '留言';
+?>
+
+
+--|monitor|cn|cn.lng
+<?php
+$wb['Server online since'] = '服务器联机自';
+$wb['Users online'] = '在线用户';
+$wb['System load 1 minute'] = '系统1分钟负载';
+$wb['System load 5 minutes'] = '系统5分钟负载';
+$wb['System load 15 minutes'] = '系统15分钟负载';
+$wb['Server Load'] = '服务器负载';
+$wb['Disk usage'] = '硬盘使用';
+$wb['Memory usage'] = '内存使用';
+$wb['no_data_serverload_txt'] = '没有可用的负载数据，请稍后再看。';
+$wb['no_data_memusage_txt'] = '没有可用的内存使用数据，请稍后再看。';
+$wb['no_data_diskusage_txt'] = '没有可用的硬盘使用数据，请稍后再看。';
+$wb['no_data_cpuinfo_txt'] = '暂没有CPU使用数据，请稍后再看。';
+$wb['no_data_services_txt'] = '暂没有服务器使用数据，请稍后再看。';
+$wb['no_data_updates_txt'] = '暂无可用的更新，请稍后再看。';
+$wb['no_data_raid_txt'] = '暂没有可用的磁盘阵列数据，请稍后再看。';
+$wb['no_data_rkhunter_txt'] = '暂无可用的 RKHunter 数据，请稍后再看。';
+$wb['no_data_mailq_txt'] = '暂无邮件限额数据，请稍后再看。';
+$wb['no_logdata_txt'] = '暂无服务器日志记录，请稍后再看。';
+$wb['Monitoring'] = '监控中';
+$wb['Server to Monitor'] = '服务器监控';
+$wb['Logfiles'] = '日志文件';
+$wb['Status of services'] = '服务状态';
+$wb['No Refresh'] = '不刷新';
+$wb['minutes'] = '分钟';
+$wb['Show Overview'] = '显示服务器概况';
+$wb['System State (All Servers)'] = '系统状态(所有服务)';
+$wb['Hardware-Information'] = '硬件信息';
+$wb['Show CPU info'] = '显示CPU信息';
+$wb['Server State'] = '服务器状态';
+$wb['Show Update State'] = '显示更新状态';
+$wb['Show RAID state'] = '显示RAID状态';
+$wb['Show Server load'] = '查看服务器负载';
+$wb['Show Disk usage'] = '显示硬盘使用详情';
+$wb['Show Memory usage'] = '显示内存使用详情';
+$wb['Show Services'] = '查看服务';
+$wb['Show Mail-Queue'] = '显示邮件队列';
+$wb['Show Mail-Log'] = '查看邮件日志';
+$wb['Show Mail warn-Log'] = '邮件警告日志';
+$wb['Show Mail err-Log'] = '邮件错误日志';
+$wb['Show System-Log'] = '查看系统日志';
+$wb['Show ISPC Cron-Log'] = '显示ISPC计划任务日志';
+$wb['Show Freshclam-Log'] = '病毒库更新日志';
+$wb['Show Clamav-Log'] = '查看Clamav日志';
+$wb['Show ISPConfig-Log'] = '查看ISPConfig日志';
+$wb['Show RKHunter-Log'] = '查看RKHunter日志';
+$wb['Show Jobqueue'] = '查看计划工作日志';
+$wb['monitor_general_serverstate_txt'] = '服务器状态';
+$wb['monitor_general_systemstate_txt'] = '系统状态';
+$wb['monitor_diskusage_filesystem_txt'] = '文件系统';
+$wb['monitor_diskusage_type_txt'] = '类型';
+$wb['monitor_diskusage_size_txt'] = '尺寸';
+$wb['monitor_diskusage_used_txt'] = '已使用';
+$wb['monitor_diskusage_available_txt'] = '可用';
+$wb['monitor_diskusage_usage_txt'] = '使用%';
+$wb['monitor_diskusage_mounted_txt'] = '安装在';
+$wb['monitor_logs_mail_txt'] = '邮件日志';
+$wb['monitor_logs_mailwarn_txt'] = '邮件警告日志';
+$wb['monitor_logs_mailerr_txt'] = '邮件错误日志';
+$wb['monitor_logs_messages_txt'] = '系统消息日志';
+$wb['monitor_logs_ispccron_txt'] = 'ISPConfig Cron - Log';
+$wb['monitor_logs_freshclam_txt'] = '病毒库更新日志';
+$wb['monitor_logs_clamav_txt'] = '杀毒软件日志';
+$wb['monitor_logs_ispc_txt'] = 'ISPConfig日志';
+$wb['monitor_nomdadm_txt'] = 'mdadm未安装或您的服务器不支持的RAID';
+$wb['monitor_norkhunter_txt'] = 'RKHunter 没有安装，所以没有可用的日志信息';
+$wb['monitor_serverstate_server_txt'] = '服务器';
+$wb['monitor_serverstate_state_txt'] = '状态';
+$wb['monitor_serverstate_unknown_txt'] = '未知';
+$wb['monitor_serverstate_info_txt'] = '信息';
+$wb['monitor_serverstate_warning_txt'] = '警告';
+$wb['monitor_serverstate_critical_txt'] = 'critical';
+$wb['monitor_serverstate_error_txt'] = '错误';
+$wb['monitor_serverstate_moreinfo_txt'] = 'More information...';
+$wb['monitor_serverstate_more_txt'] = '更多...';
+$wb['monitor_serverstate_fclamok_txt'] = '防病毒保护良好';
+$wb['monitor_serverstate_fclamoutdated_txt'] = '病毒库需要更新';
+$wb['monitor_serverstate_fclamunknown_txt'] = '病毒库更新: ???!';
+$wb['monitor_serverstate_hdok_txt'] = '硬盘状态良好';
+$wb['monitor_serverstate_hdgoingfull_txt'] = '硬盘空间已满';
+$wb['monitor_serverstate_hdnearlyfull_txt'] = '硬盘空间不足';
+$wb['monitor_serverstate_hdveryfull_txt'] = '硬盘空间已满';
+$wb['monitor_serverstate_hdfull_txt'] = '硬盘已经没有多余空间';
+$wb['monitor_serverstate_hdunknown_txt'] = '硬盘: ???';
+$wb['monitor_serverstate_listok_txt'] = '好';
+$wb['monitor_serverstate_listinfo_txt'] = '信息';
+$wb['monitor_serverstate_listwarning_txt'] = '警告';
+$wb['monitor_serverstate_listcritical_txt'] = '关键';
+$wb['monitor_serverstate_listerror_txt'] = '错误';
+$wb['monitor_serverstate_listunknown_txt'] = '未知';
+$wb['monitor_serverstate_loadok_txt'] = '服务器加载正常';
+$wb['monitor_serverstate_loadheavy_txt'] = '服务器加载程序过多';
+$wb['monitor_serverstate_loadhigh_txt'] = '服务器负载重';
+$wb['monitor_serverstate_loaghigher_txt'] = '服务器负载过重';
+$wb['monitor_serverstate_loadhighest_txt'] = '服务器负载非常重';
+$wb['monitor_serverstate_loadunknown_txt'] = '服务器负载: ???';
+$wb['monitor_serverstate_mailqok_txt'] = 'Mailq负载完美。';
+$wb['monitor_serverstate_mailqheavy_txt'] = 'Mailq负载比较沉重。';
+$wb['monitor_serverstate_mailqhigh_txt'] = 'Mailq负载沉重。';
+$wb['monitor_serverstate_mailqhigher_txt'] = '您Mailq在高负荷下';
+$wb['monitor_serverstate_mailqhighest_txt'] = '根据您的Mailq在最高负荷';
+$wb['monitor_serverstate_mailqunknown_txt'] = 'Mailq: ???';
+$wb['monitor_serverstate_raidok_txt'] = '磁盘阵列状态良好';
+$wb['monitor_serverstate_raidresync_txt'] = '您的磁盘阵列运行在RESYNC模式';
+$wb['monitor_serverstate_raidfault_txt'] = '您的磁盘阵列有一个硬盘有故障，请尽快更换。';
+$wb['monitor_serverstate_raiderror_txt'] = '你的磁盘阵列没有工作。';
+$wb['monitor_serverstate_raidunknown_txt'] = '磁盘阵列状态: ???';
+$wb['monitor_serverstate_servicesonline_txt'] = '必须的服务全部启动。';
+$wb['monitor_serverstate_servicesoffline_txt'] = '一个或多个必须的服务没有启动。';
+$wb['monitor_serverstate_servicesunknown_txt'] = '服务:???';
+$wb['monitor_serverstate_syslogok_txt'] = '系统日志良好。';
+$wb['monitor_serverstate_syslogwarning_txt'] = '系统日志中有警告信息。';
+$wb['monitor_serverstate_syslogerror_txt'] = '有错误的系统日志';
+$wb['monitor_serverstate_syslogunknown_txt'] = '系统日志：???';
+$wb['monitor_serverstate_updatesok_txt'] = '您的系统是最新的。';
+$wb['monitor_serverstate_updatesneeded_txt'] = '一个或多个组件需要更新。';
+$wb['monitor_serverstate_updatesunknown_txt'] = '系统更新:???';
+$wb['monitor_services_online_txt'] = '在线';
+$wb['monitor_services_offline_txt'] = '离线';
+$wb['monitor_services_web_txt'] = 'Web服务器:';
+$wb['monitor_services_ftp_txt'] = 'FTP-Server:';
+$wb['monitor_services_smtp_txt'] = 'SMTP服务器:';
+$wb['monitor_services_pop_txt'] = 'POP3服务器:';
+$wb['monitor_services_imap_txt'] = 'IMAP服务器:';
+$wb['monitor_services_mydns_txt'] = 'myDNS服务器:';
+$wb['monitor_services_mysql_txt'] = 'mySQL服务器:';
+$wb['monitor_settings_datafromdate_txt'] = 'Data from: ';
+$wb['monitor_settings_datetimeformat_txt'] = 'Y-m-d H:i';
+$wb['monitor_settings_refreshsq_txt'] = '刷新次序:';
+$wb['monitor_settings_server_txt'] = '服务器';
+$wb['monitor_title_cpuinfo_txt'] = 'CPU 信息';
+$wb['monitor_title_updatestate_txt'] = '升级状态';
+$wb['monitor_title_mailq_txt'] = '邮件队列';
+$wb['monitor_title_raidstate_txt'] = '磁盘阵列状态';
+$wb['monitor_title_rkhunterlog_txt'] = 'RKHunter日志';
+$wb['monitor_updates_nosupport_txt'] = '您的分布不支持此项监控！';
+$wb['System'] = '系统';
+$wb['Client'] = '客户';
+$wb['Email'] = '邮件';
+$wb['Monitor'] = '监控';
+$wb['Sites'] = '网站';
+$wb['DNS'] = '域名';
+$wb['Tools'] = '工具';
+$wb['Help'] = '帮助';
+?>
+
+
+--|dns|cn|cn_dns_hinfo.lng
+<?php
+$wb['server_id_txt'] = '服务器';
+$wb['zone_txt'] = '域';
+$wb['name_txt'] = '主机名';
+$wb['type_txt'] = '类型';
+$wb['data_txt'] = '主机信息';
+$wb['ttl_txt'] = 'TTL';
+$wb['active_txt'] = '激活';
+$wb['limit_dns_record_txt'] = '您的帐户的DNS记录数已经达到最高限制。';
+$wb['no_zone_perm'] = '您无权为这个DNS域增加DNS记录。';
+$wb['name_error_empty'] = '主机名为空。';
+$wb['name_error_regex'] = '主机名格式错误。';
+$wb['data_error_empty'] = '主机信息为空。';
+$wb['data_error_regex'] = '非法的主机信息格式。';
+?>
+
+
+--|dns|cn|cn_dns_srv.lng
+<?php
+$wb['server_id_txt'] = '服务器';
+$wb['zone_txt'] = '域';
+$wb['name_txt'] = '主机名';
+$wb['type_txt'] = '类型';
+$wb['data_txt'] = '服务器记录';
+$wb['ttl_txt'] = 'TTL';
+$wb['active_txt'] = '激活';
+$wb['limit_dns_record_txt'] = '你的帐户的DNS记录数已经达到最大限制了.';
+$wb['no_zone_perm'] = '你不允许操作本DNS域。';
+$wb['name_error_empty'] = '主机名为空。';
+$wb['name_error_regex'] = '主机名格式错误。';
+$wb['data_error_empty'] = '服务器记录为空。';
+$wb['data_error_regex'] = '服务器记录格式错误。';
+?>
+
+
+--|dns|cn|cn_dns_template.lng
+<?php
+$wb['name_txt'] = '名称';
+$wb['fields_txt'] = '字段';
+$wb['template_txt'] = '模板';
+$wb['visible_txt'] = '是否可见';
+?>
+
+
+--|dns|cn|cn_dns_soa.lng
+<?php
+$wb['server_id_txt'] = '服务器';
+$wb['origin_txt'] = '域 (SOA)';
+$wb['ns_txt'] = 'NS';
+$wb['mbox_txt'] = '邮件';
+$wb['serial_txt'] = '串行';
+$wb['refresh_txt'] = '刷新';
+$wb['retry_txt'] = '重试';
+$wb['expire_txt'] = '有效期';
+$wb['minimum_txt'] = '最低';
+$wb['ttl_txt'] = 'TTL';
+$wb['xfer_txt'] = '允许域转移到 <br />这些IP （用英文逗号分隔）';
+$wb['active_txt'] = '激活';
+$wb['limit_dns_zone_txt'] = '您帐户的DNS记录数已经达到最大.';
+$wb['client_txt'] = '客户';
+$wb['no_zone_perm'] = '您无权在本域中添加记录.';
+$wb['server_id_error_empty'] = '没有服务器被选中.';
+$wb['origin_error_empty'] = '域为空.';
+$wb['origin_error_unique'] = '本DNS域中已经存在本条记录了。';
+$wb['origin_error_regex'] = '域格式错误。';
+$wb['ns_error_regex'] = 'NS格式错误。';
+$wb['mbox_error_empty'] = '邮件地址为空。';
+$wb['mbox_error_regex'] = '邮件格式错误。';
+?>
+
+
+--|dns|cn|cn_dns_soa_list.lng
+<?php
+$wb['list_head_txt'] = 'DNS 域';
+$wb['active_txt'] = '激活';
+$wb['server_id_txt'] = '服务器';
+$wb['origin_txt'] = '域';
+$wb['ns_txt'] = 'NS';
+$wb['mbox_txt'] = '邮件';
+$wb['add_new_record_txt'] = '添加DNS域(SOA)';
+?>
+
+
+--|dns|cn|cn_dns_template_list.lng
+<?php
+$wb['list_head_txt'] = 'DNS模板向导';
+$wb['visible_txt'] = '是否可见';
+$wb['name_txt'] = '名称';
+$wb['add_new_record_txt'] = '添加新记录';
+?>
+
+
+--|dns|cn|cn_dns_mx.lng
+<?php
+$wb['server_id_txt'] = '服务器';
+$wb['zone_txt'] = '域';
+$wb['name_txt'] = '主机名';
+$wb['type_txt'] = '类型';
+$wb['data_txt'] = '邮件服务器主机名';
+$wb['aux_txt'] = '优先级';
+$wb['ttl_txt'] = 'TTL';
+$wb['active_txt'] = '激活';
+$wb['limit_dns_record_txt'] = '您的帐户DNS记录数已经达到最大.';
+$wb['no_zone_perm'] = '您不能在本DNS域中添加记录。';
+$wb['name_error_empty'] = '主机名为空。';
+$wb['name_error_regex'] = '主机名格式错误。';
+$wb['data_error_empty'] = '邮件服务器主机名为空。';
+$wb['data_error_regex'] = '邮件服务器主机名格式错误。';
+?>
+
+
+--|dns|cn|cn_dns_txt.lng
+<?php
+$wb['server_id_txt'] = '服务器';
+$wb['zone_txt'] = '域';
+$wb['name_txt'] = '主机名';
+$wb['type_txt'] = '类型';
+$wb['data_txt'] = 'Text';
+$wb['ttl_txt'] = 'TTL';
+$wb['active_txt'] = '激活';
+$wb['limit_dns_record_txt'] = '你的帐号已经达到最高DNS记录数.';
+$wb['no_zone_perm'] = '您没有权限添加这个DNS域。';
+$wb['name_error_empty'] = '主机名为空。';
+$wb['name_error_regex'] = '主机名格式错误。';
+$wb['data_error_empty'] = '文本为空！';
+$wb['data_error_regex'] = '文本格式错误。';
+?>
+
+
+--|dns|cn|cn.lng
+<?php
+$wb['DNS'] = '域名';
+$wb['Zones'] = '域';
+$wb['DNS A'] = 'A记录';
+$wb['DNS ALIAS'] = '别名';
+$wb['DNS CNAME'] = 'CNAME记录';
+$wb['DNS hinfo'] = 'DNS信息';
+$wb['DNS mx'] = 'MX记录';
+$wb['DNS ns'] = 'NS记录';
+$wb['DNS ptr'] = 'DNS ptr';
+$wb['DNS RP'] = 'RP记录';
+$wb['DNS Zone'] = 'DNS区域';
+$wb['Records'] = '记录';
+$wb['DNS SRV'] = 'DNS SRV';
+$wb['DNS TXT Record'] = '文本（TXT）记录';
+$wb['DNS TXT'] = '文本（TXT)';
+$wb['System'] = '系统';
+$wb['Client'] = '客户';
+$wb['Email'] = '邮件';
+$wb['Monitor'] = '监控';
+$wb['Sites'] = '网站';
+$wb['Tools'] = '工具';
+$wb['Help'] = '帮助';
+$wb['DNS Wizard'] = 'DNS向导';
+$wb['Add DNS Zone'] = '添加DNS域';
+$wb['Templates'] = '模板';
+?>
+
+--|dns|cn|cn_dns_alias.lng
+<?php
+$wb['server_id_txt'] = '服务器';
+$wb['zone_txt'] = '域';
+$wb['name_txt'] = '主机名';
+$wb['type_txt'] = '类型';
+$wb['data_txt'] = '目标主机名';
+$wb['ttl_txt'] = 'TTL';
+$wb['active_txt'] = '激活';
+$wb['limit_dns_record_txt'] = '您的帐户的DNS记录数已经达到最大。';
+$wb['no_zone_perm'] = '您不能在本DNS域中添加记录。';
+$wb['name_error_empty'] = '主机名为空。';
+$wb['name_error_regex'] = '主机名格式错误。';
+$wb['data_error_empty'] = '目标主机名为空';
+$wb['data_error_regex'] = '目标主机名格式错误。';
+?>
+
+
+--|dns|cn|cn_dns_a_list.lng
+<?php
+$wb['list_head_txt'] = 'A记录';
+$wb['active_txt'] = '激活';
+$wb['server_id_txt'] = '服务器';
+$wb['zone_txt'] = '域';
+$wb['name_txt'] = '名称';
+$wb['data_txt'] = '数据';
+$wb['aux_txt'] = '优先级';
+$wb['type_txt'] = '类型';
+$wb['add_new_record_txt'] = '添加A记录';
+$wb['page_txt'] = '页';
+$wb['page_of_txt'] = '/';
+$wb['delete_confirmation'] = '您真的要删除本条记录?';
+?>
+
+
+--|dns|cn|cn_dns_ptr.lng
+<?php
+$wb['server_id_txt'] = '服务器';
+$wb['zone_txt'] = '域';
+$wb['name_txt'] = '名称';
+$wb['type_txt'] = '类型';
+$wb['data_txt'] = '标准主机名';
+$wb['ttl_txt'] = 'TTL';
+$wb['active_txt'] = '激活';
+$wb['limit_dns_record_txt'] = '您的帐户的DNS记录数已经达到最大。';
+$wb['no_zone_perm'] = '您不能在本DNS域中添加记录。';
+$wb['name_error_empty'] = '名称为空。';
+$wb['name_error_regex'] = '名称格式错误。';
+$wb['data_error_empty'] = '标准主机名为空。';
+$wb['data_error_regex'] = '标准主机名格式错误。';
+?>
+
+
+--|dns|cn|cn_dns_wizard.lng
+<?php
+$wb['template_id_txt'] = '模板';
+$wb['server_id_txt'] = '服务器';
+$wb['client_txt'] = '用户';
+$wb['btn_save_txt'] = '建立DNS记录';
+$wb['btn_cancel_txt'] = '取消';
+$wb['domain_txt'] = '域名';
+$wb['email_txt'] = '邮件';
+$wb['ns1_txt'] = 'NS 1';
+$wb['ns2_txt'] = 'NS 2';
+$wb['ip_txt'] = 'IP地址';
+$wb['error_origin_empty'] = 'Origin empty.';
+?>
+
+
+--|dns|cn|cn_dns_a.lng
+<?php
+$wb['server_id_txt'] = '服务器';
+$wb['zone_txt'] = '域';
+$wb['name_txt'] = '主机名';
+$wb['type_txt'] = '类型';
+$wb['data_txt'] = 'IP地址';
+$wb['ttl_txt'] = 'TTL';
+$wb['active_txt'] = '激活';
+$wb['limit_dns_record_txt'] = '您的帐户的DNS记录数已经达到最大.';
+$wb['no_zone_perm'] = '您无权在本DNS域中添加记录。';
+$wb['name_error_empty'] = '主机名为空。';
+$wb['name_error_regex'] = '主机名格式错误。';
+$wb['data_error_empty'] = 'IP地址为空。';
+$wb['data_error_regex'] = 'IP地址格式错误。';
+?>
+
+
+--|dns|cn|cn_dns_rp.lng
+<?php
+$wb['server_id_txt'] = '服务器';
+$wb['zone_txt'] = '域';
+$wb['name_txt'] = '主机名';
+$wb['type_txt'] = '类型';
+$wb['data_txt'] = '负责人';
+$wb['ttl_txt'] = 'TTL';
+$wb['active_txt'] = '激活';
+$wb['limit_dns_record_txt'] = '您的帐户的DNS记录数已经达到最大。';
+$wb['no_zone_perm'] = '您不能在本DNS域中添加记录。';
+$wb['name_error_empty'] = '主机名为空。';
+$wb['name_error_regex'] = '主机名格式错误。';
+$wb['data_error_empty'] = '负责人字段为空。';
+$wb['data_error_regex'] = '负责人字段格式错误。';
+?>
+
+
+--|dns|cn|cn_dns_cname.lng
+<?php
+$wb['server_id_txt'] = '服务器';
+$wb['zone_txt'] = '域';
+$wb['name_txt'] = '主机名';
+$wb['type_txt'] = '类型';
+$wb['data_txt'] = '目标主机';
+$wb['ttl_txt'] = 'TTL';
+$wb['active_txt'] = '激活';
+$wb['limit_dns_record_txt'] = '您的帐户的DNS记录数已经达到最大。';
+$wb['no_zone_perm'] = '您无权在本DNS域中添加记录。';
+$wb['name_error_empty'] = '主机名为空。';
+$wb['name_error_regex'] = '主机名格式错误。';
+$wb['data_error_empty'] = '目标主机为空。';
+$wb['data_error_regex'] = '目标主机格式错误。';
+?>
+
+
+---|EOF
