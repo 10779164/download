@@ -1,5 +1,6 @@
 Auto install shell: ispconfig_install.tar.gz
-Download: https://raw.githubusercontent.com/10779164/download/master/ispconfig/ispconfig_install.tar.gz
+Download(standard): https://raw.githubusercontent.com/10779164/download/master/ispconfig/ispconfig_install.tar.gz
+Download(basic): https://raw.githubusercontent.com/10779164/download/master/ispconfig/ispconfig_basic_install.tar.gz
 
 Language(cn) package: cn.lng
 Download: https://github.com/10779164/download/blob/master/ispconfig/cn.lng
