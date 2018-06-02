@@ -24,7 +24,7 @@ InstallPostfix() {
   sed -i "s/#  -o smtpd_sasl_auth_enable=yes/  -o smtpd_sasl_auth_enable=yes\\`echo -e '\n\r'`  -o smtpd_client_restrictions=permit_sasl_authenticated,reject/" /etc/postfix/master.cf
   sed -i "s/#tlsproxy  unix  -       -       y       -       0       tlsproxy/tlsproxy  unix  -       -       y       -       0       tlsproxy/" /etc/postfix/master.cf
 
-  openssl req -new -outform PEM -out /etc/postfix/smtpd.cert -newkey rsa:2048 -nodes -keyout /etc/postfix/smtpd.key -keyform PEM -days 3650 -x509 -subj "/CN=$SSL_COUNTRY/ST=$SSL_STATE/LN=$SSL_LOCALITY/ON=$SSL_ORGANIZATION/OU=$SSL_ORGUNIT/CN=$CFG_HOSTNAME_FQDN/EA="
+  openssl req -new -outform PEM -out /etc/postfix/smtpd.cert -newkey rsa:2048 -nodes -keyout /etc/postfix/smtpd.key -keyform PEM -days 3650 -x509 -subj "/CN=$SSL_COUNTRY/ST=$SSL_STATE/L=$SSL_LOCALITY/O=$SSL_ORGANIZATION/OU=$SSL_ORGUNIT/CN=$CFG_HOSTNAME_FQDN/emailAddress=support@databasemart.com"
 
   service postfix restart > /dev/null 2>&1
   echo -e "[${green}DONE${NC}]\n"

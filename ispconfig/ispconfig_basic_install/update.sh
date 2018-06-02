@@ -20,6 +20,10 @@ source $PWD/functions/check_linux.sh
 echo "Checking your system, please wait..."
 CheckLinux
 
+#ssl
+source $PWD/functions/ssl.sh
+Openssl
+
 source $PWD/distros/$DISTRO/askquestions_update.sh
 AskQuestions_update
 
