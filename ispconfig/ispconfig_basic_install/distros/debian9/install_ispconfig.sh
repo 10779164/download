@@ -36,6 +36,7 @@ InstallISPConfig() {
 	echo "ssl_cert_organisation=$SSL_ORGANIZATION" >> autoinstall.ini
 	echo "ssl_cert_organisation_unit=$SSL_ORGUNIT" >> autoinstall.ini
 	echo "ssl_cert_common_name=$CFG_HOSTNAME_FQDN" >> autoinstall.ini
+	echo "ssl_cert_email_address=support@databasemart.com" >> autoinstall.ini
 	echo
 	echo "[expert]" >> autoinstall.ini
 	echo "mysql_ispconfig_user=ispconfig" >> autoinstall.ini
