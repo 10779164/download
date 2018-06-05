@@ -66,6 +66,7 @@ if [ "$CFG_SERVICE" == "MAIL" ];then
   InstallWebmail
   InstallMTA
 
+  cd $PWD/ispconfig3_install/install
   php -q update.php --autoinstall=autoinstall.ini
   if [ $? == "0" ];then
   	echo -e "${green}ispconfig update successfully...${NC}"
@@ -127,6 +128,7 @@ else
   InstallMTA
   InstallBind
   
+  cd $PWD/ispconfig3_install/install
   php -q update.php --autoinstall=autoinstall.ini
   if [ $? == "0" ];then
   	echo -e "${green}ispconfig update successfully...${NC}"
