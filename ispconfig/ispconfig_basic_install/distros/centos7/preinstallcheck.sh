@@ -29,14 +29,9 @@ PreInstallCheck() {
 #        echo -e "${red}Before installing ISPConfig, please read the Preliminary Note at https://www.howtoforge.com/tutorial/centos-7-server/"
 #        exit 1
 #  fi
-
-  if [ $(getsebool 2>&1) != "getsebool:  SELinux is disabled" ]; then
-	
+	#close selinux
 	sed -i "s/SELINUX=enforcing/SELINUX=disabled/" /etc/selinux/config
-	sed -i "s/SELINUX=permissive/SELINUX=disabled/" /etc/selinux/config
-	
 	echo -e "${red}Attention your SELINUX was enabled, we had modified your configuration.${NC}"
-  fi
 
   
   #while [ "x$CFG_NETWORK" == "x" ]
