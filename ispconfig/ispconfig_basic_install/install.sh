@@ -16,7 +16,7 @@ exec 2>&1
 #---------------------------------------------------------------------
 # Global variables
 #---------------------------------------------------------------------
-CFG_HOSTNAME_FQDN=`hostname -f`;    
+CFG_HOSTNAME_FQDN=`hostname`;    
 WT_BACKTITLE="ISPConfig 3 System Install"
 
 # Bash Colour
@@ -82,9 +82,6 @@ else
 	exit 1
 fi
 
-if [ "$DISTRO" == "debian8" ]; then
-        CFG_ISPCVERSION="Stable"
-fi
 
 if [ -f /etc/debian_version ]; then
   	PreInstallCheck

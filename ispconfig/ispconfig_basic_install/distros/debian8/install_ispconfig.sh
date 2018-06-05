@@ -9,6 +9,7 @@ InstallISPConfig() {
   cd ispconfig3_install/install/
   if [ $CFG_ISPC == "standard" ]; then
   	echo "Create INI file"
+ 	[ -f autoinstall.ini ] && rm -f autoinstall.ini
 	touch autoinstall.ini
 	echo "[install]" > autoinstall.ini
 	echo "language=en" >> autoinstall.ini

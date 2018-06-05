@@ -8,6 +8,7 @@ InstallISPConfig() {
   tar -xvf ISPConfig-3-stable.tar.gz &>/dev/null
   cd ispconfig3_install/install/
   echo "Create INI file"
+  [ -f autoinstall.ini ] && rm -f autoinstall.ini
   touch autoinstall.ini
   echo "[install]" > autoinstall.ini
   echo "language=en" >> autoinstall.ini
