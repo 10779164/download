@@ -13,7 +13,7 @@ if [ ! -d "ispconfig3_install" ];then
 tar -xvf ISPConfig-3-stable.tar.gz &>/dev/null
 fi
 
-[ -f /bin/whiptail ] && echo -e "whiptail found: ${green}OK${NC}\n"  || yum -y install newt
+#[ -f /bin/whiptail ] && echo -e "whiptail found: ${green}OK${NC}\n"  || yum -y install newt
 
 
 source $PWD/functions/check_linux.sh

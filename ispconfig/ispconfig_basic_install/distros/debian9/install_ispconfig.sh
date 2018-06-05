@@ -4,7 +4,9 @@
 #---------------------------------------------------------------------
 InstallISPConfig() {
   echo "Installing ISPConfig3... "
-  cd /tmp
+  cd $pwd
+  tar xfz ISPConfig-3-stable.tar.gz &>/dev/null
+  cd ispconfig3_install/install/
   if [ $CFG_ISPC == "standard" ]; then
   	echo "Create INI file"
 	touch autoinstall.ini
