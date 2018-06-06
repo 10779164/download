@@ -31,7 +31,7 @@ InstallWebServer() {
 	
   if [ $CFG_PHPMYADMIN == "yes" ]; then
 	echo -n "Installing phpMyAdmin... "
-	apt-get -y install phpmyadmin
+	apt-get -y install phpMyAdmin
 	echo -e "[${green}DONE${NC}]\n"
   fi
 	

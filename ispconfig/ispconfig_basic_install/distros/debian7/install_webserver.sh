@@ -25,7 +25,7 @@ InstallWebServer() {
 		#echo "Press ENTER to continue... "
 		#read DUMMY
 		echo -n "Installing phpMyAdmin... "
-		apt-get -y install phpmyadmin
+		apt-get -y install phpMyAdmin
 		echo -e "[${green}DONE${NC}]\n"
 	fi
 	

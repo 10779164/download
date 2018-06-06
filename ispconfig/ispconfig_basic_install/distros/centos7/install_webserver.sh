@@ -82,7 +82,7 @@ InstallWebServer() {
 	#echo 'LoadModule python_module modules/mod_python.so' > /etc/httpd/conf.modules.d/10-python.conf
 	echo -e "${green}done!${NC}\n"
 	echo "Installing phpMyAdmin... "
-	yum -y install phpmyadmin 
+	yum -y install phpMyAdmin 
 	echo -e "${green}done!${NC}\n"
     sed -i "s/Require ip 127.0.0.1/#Require ip 127.0.0.1/" /etc/httpd/conf.d/phpMyAdmin.conf
     sed -i '0,/Require ip ::1/ s/Require ip ::1/#Require ip ::1\n       Require all granted/' /etc/httpd/conf.d/phpMyAdmin.conf
