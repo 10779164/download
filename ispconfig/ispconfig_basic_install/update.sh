@@ -41,6 +41,7 @@ fi
 
 if [ "$CFG_SERVICE" == "MAIL" ];then
   echo "Start updata webmail for ispconfig..."
+  source $PWD/distros/$DISTRO/install_antivirus.sh
   source $PWD/distros/$DISTRO/install_postfix.sh
   source $PWD/distros/$DISTRO/install_webmail.sh
   source $PWD/distros/$DISTRO/install_mta.sh
@@ -62,6 +63,7 @@ if [ "$CFG_SERVICE" == "MAIL" ];then
   echo "create_new_ispconfig_ssl_cert=no" >> autoinstall.ini
   echo "reconfigure_crontab=yes" >> autoinstall.ini
 
+  InstallAntiVirus
   InstallPostfix
   InstallWebmail
   InstallMTA
@@ -104,6 +106,7 @@ elif [ "$CFG_SERVICE" == "DNS" ];then
 
 else
   echo "Start updata dns and mail for ispconfig..."
+  source $PWD/distros/$DISTRO/install_antivirus.sh
   source $PWD/distros/$DISTRO/install_postfix.sh
   source $PWD/distros/$DISTRO/install_webmail.sh
   source $PWD/distros/$DISTRO/install_mta.sh
@@ -123,6 +126,7 @@ else
   echo "create_new_ispconfig_ssl_cert=no" >> autoinstall.ini
   echo "reconfigure_crontab=yes" >> autoinstall.ini
 
+  InstallAntiVirus
   InstallPostfix
   InstallWebmail
   InstallMTA
