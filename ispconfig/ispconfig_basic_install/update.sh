@@ -1,5 +1,6 @@
 #!/bin/bash
 
+T_PWD=$(pwd)
 PWD=$(pwd)
 WT_BACKTITLE="ISPConfig 3 System update"
 CFG_HOSTNAME_FQDN=`hostname`
@@ -68,7 +69,7 @@ if [ "$CFG_SERVICE" == "MAIL" ];then
   InstallWebmail
   InstallMTA
 
-  cd $PWD/ispconfig3_install/install
+  cd ${T_PWD}/ispconfig3_install/install
   php -q update.php --autoinstall=autoinstall.ini
   if [ $? == "0" ];then
   	echo -e "${green}ispconfig update successfully...${NC}"
@@ -81,7 +82,7 @@ elif [ "$CFG_SERVICE" == "DNS" ];then
   echo "Start updata dns for ispconfig..."
   source $PWD/distros/$DISTRO/install_bind.sh
 
-  cd $PWD/ispconfig3_install/install
+  cd ${T_PWD}/ispconfig3_install/install
   [ -f "autoinstall.ini" ] && rm -f autoinstall.ini
   echo "[update]" >> autoinstall.ini
   echo "svc_detect_change_db_server=no">> autoinstall.ini
@@ -132,7 +133,7 @@ else
   InstallMTA
   InstallBind
   
-  cd $PWD/ispconfig3_install/install
+  cd ${T_PWD}/ispconfig3_install/install
   php -q update.php --autoinstall=autoinstall.ini
   if [ $? == "0" ];then
   	echo -e "${green}ispconfig update successfully...${NC}"
