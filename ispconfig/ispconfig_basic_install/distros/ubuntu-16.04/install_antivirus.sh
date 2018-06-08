@@ -16,10 +16,10 @@ InstallAntiVirus() {
   update-rc.d -f spamassassin remove
   echo -e "[${green}DONE${NC}]\n"
   
-  if [ "$CFG_AVUPDATE" == "yes" ]; then
-	echo -n "Updating ClamAV. Please Wait ... "
-	freshclam
-  fi
+  #if [ "$CFG_AVUPDATE" == "yes" ]; then
+  #	echo -n "Updating ClamAV. Please Wait ... "
+  #	freshclam
+  #fi
   
   echo -n "Restarting ClamAV... "
   service clamav-daemon restart

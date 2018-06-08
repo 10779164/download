@@ -17,10 +17,10 @@ InstallAntiVirus() {
   echo -n "Disable Spamassassin ... "
   systemctl disable spamassassin
   echo -e "[${green}DONE${NC}]\n"
-  if [ $CFG_AVUPDATE == "yes" ]; then
-	echo -n "Updating ClamAV. Please Wait ... "
-	freshclam
-  fi
+  #if [ $CFG_AVUPDATE == "yes" ]; then
+  #	echo -n "Updating ClamAV. Please Wait ... "
+  #	freshclam
+  #fi
   echo -n "Restarting ClamAV... "
   service clamav-daemon restart
   echo -e "[${green}DONE${NC}]\n"
