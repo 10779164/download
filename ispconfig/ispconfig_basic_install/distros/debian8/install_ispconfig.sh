@@ -53,7 +53,7 @@ InstallISPConfig() {
 	echo "configure_mail=n" >> autoinstall.ini
       	echo "configure_jailkit=y" >> autoinstall.ini
     	echo "configure_ftp=y" >> autoinstall.ini
-	echo "configure_dns=n"> autoinstall.ini
+	echo "configure_dns=n">> autoinstall.ini
 	echo "configure_firewall=y" >> autoinstall.ini
 	echo "install_ispconfig_web_interface=$CFG_SETUP_MASTER" >> autoinstall.ini
 	echo
