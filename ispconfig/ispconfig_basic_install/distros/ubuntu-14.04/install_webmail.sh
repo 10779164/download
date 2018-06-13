@@ -15,11 +15,66 @@ InstallWebmail() {
 	  echo "roundcube-core roundcube/app-password-confirm password $CFG_ROUNDCUBE_PWD" | debconf-set-selections
 	  echo "roundcube-core roundcube/hosts string localhost" | debconf-set-selections
 	  apt-get -yqq install roundcube roundcube-core roundcube-mysql roundcube-plugins
-	  cp /etc/roundcube/main.inc.php.ucf-dist /etc/roundcube/config.inc.php
+	  cp /etc/roundcube/main.inc.php /etc/roundcube/config.inc.php
 	  sed -i "s/\$config\['default_host'\] = '';/\$config['default_host'] = 'localhost';/" /etc/roundcube/config.inc.php
 
 	  if [ $CFG_WEBSERVER == "apache" ]; then
-		echo "Alias /webmail /var/lib/roundcube" >> /etc/apache2/conf-enabled/roundcube.conf
+		#echo "Alias /webmail /var/lib/roundcube" >> /etc/apache2/conf-enabled/roundcube.conf
+
+		cat << "EOF" > /etc/apache2/conf-enabled/roundcube.conf
+		# Those aliases do not work properly with several hosts on your apache server
+		# Uncomment them to use it or adapt them to your configuration
+		#    Alias /roundcube /var/lib/roundcube
+
+		<Directory /var/lib/roundcube/>
+  		Options +FollowSymLinks
+  		# This is needed to parse /var/lib/roundcube/.htaccess. See its
+  		# content before setting AllowOverride to None.
+  		AllowOverride All
+  		<IfVersion >= 2.3>
+    			Require all granted
+  		</IfVersion>
+  		<IfVersion < 2.3>
+    			Order allow,deny
+    			Allow from all
+  		</IfVersion>
+		</Directory>
+
+		# Protecting basic directories:
+		<Directory /var/lib/roundcube/config>
+        		Options -FollowSymLinks
+        		AllowOverride None
+		</Directory>
+
+		<Directory /var/lib/roundcube/temp>
+        		Options -FollowSymLinks
+        		AllowOverride None
+        	<IfVersion >= 2.3>
+          		Require all denied
+        	</IfVersion>
+        	<IfVersion < 2.3>
+          		Order allow,deny
+          		Deny from all
+        	</IfVersion>
+		</Directory>
+
+		<Directory /var/lib/roundcube/logs>
+        		Options -FollowSymLinks
+        		AllowOverride None
+        	<IfVersion >= 2.3>
+          		Require all denied
+        	</IfVersion>
+        	<IfVersion < 2.3>
+          		Order allow,deny
+          		Deny from all
+        	</IfVersion>
+		</Directory>
+
+		Alias /webmail /var/lib/roundcube
+EOF		
+
+
+	 	php5enmod mcrypt
 		service apache2 reload
 	  else
         cat << "EOF" > /etc/nginx/sites-available/roundcube.vhost
