@@ -4,7 +4,7 @@
 #---------------------------------------------------------------------
 InstallAntiVirus() {
   echo -n "Installing Anti-Virus utilities... (This take some time. Don't abort it ...) "
-  apt-get -yqq install amavisd-new spamassassin clamav clamav-daemon zoo unzip bzip2 arj nomarch lzop cabextract apt-listchanges libnet-ldap-perl libauthen-sasl-perl clamav-docs daemon libio-string-perl libio-socket-ssl-perl libnet-ident-perl zip libnet-dns-perl postgrey rkhunter systemd unrar-free p7zip rpm2cpio tnef > /dev/null 2>&1
+  apt-get -y install amavisd-new spamassassin clamav clamav-daemon zoo unzip bzip2 arj nomarch lzop cabextract apt-listchanges libnet-ldap-perl libauthen-sasl-perl clamav-docs daemon libio-string-perl libio-socket-ssl-perl libnet-ident-perl zip libnet-dns-perl postgrey rkhunter systemd unrar-free p7zip rpm2cpio tnef 
   sed -i "s/AllowSupplementaryGroups false/AllowSupplementaryGroups true/" /etc/clamav/clamd.conf
   echo "use strict;" > /etc/amavis/conf.d/05-node_id
   echo "chomp(\$myhostname = \`hostname --fqdn\`);" >> /etc/amavis/conf.d/05-node_id
