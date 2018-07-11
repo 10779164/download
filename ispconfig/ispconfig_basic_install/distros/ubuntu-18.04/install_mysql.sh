@@ -40,4 +40,4 @@ InstallSQLServer() {
 
     systemctl restart mariadb.service > /dev/null 2>&1
     echo -e "[${green}DONE${NC}]\n"
-
+}
