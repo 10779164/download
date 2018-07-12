@@ -13,7 +13,7 @@ InstallPostfix() {
   echo -n "Installing Postfix... "
   echo "postfix postfix/main_mailer_type select Internet Site" | debconf-set-selections
   echo "postfix postfix/mailname string $CFG_HOSTNAME_FQDN" | debconf-set-selections
-  apt-get -yqq install postfix postfix-mysql postfix-doc openssl getmail4 binutils dovecot-imapd dovecot-pop3d dovecot-mysql dovecot-sieve dovecot-lmtpd > /dev/null 2>&1
+  Apt-get -yqq install postfix postfix-mysql postfix-doc openssl getmail4 binutils > /dev/null 2>&1
   sed -i "s/#submission/submission/" /etc/postfix/master.cf
   sed -i "s/#  -o syslog_name=postfix\/submission/  -o syslog_name=postfix\/submission/" /etc/postfix/master.cf
   sed -i "s/#  -o smtpd_tls_security_level=encrypt/  -o smtpd_tls_security_level=encrypt/" /etc/postfix/master.cf
