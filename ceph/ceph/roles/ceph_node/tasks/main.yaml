@@ -1,0 +1,20 @@
+---
+#- name: Init install directory
+#  raw: >
+#       [ -d {{ deploy_dir }} ] && rm -fr {{ deploy_dir }}
+
+- name: Create install directory
+  file: path={{ deploy_dir }} state=directory
+
+- name: Install epel repo
+  yum: name=epel-release state=latest
+
+- name: Clean nodes ceph env
+  shell: cd {{ deploy_dir }} ; ceph-deploy purge {{ nodes_name }} ; ceph-deploy purgedata {{ nodes_name }} ; ceph-deploy forgetkeys ; rm -rf ./*
+  
+- name: Create ceph configure to nodes
+  shell: cd {{ deploy_dir }} ; ceph-deploy new {{ nodes_name }}
+
+- name: install ceph to nodes
+  shell: cd {{ deploy_dir }} ; ceph-deploy install {{ nodes_name }} --repo-url=https://mirrors.aliyun.com/ceph/rpm-mimic/el7/
+

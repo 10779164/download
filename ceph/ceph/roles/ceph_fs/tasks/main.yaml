@@ -1,0 +1,17 @@
+- name: Config ceph filesystem
+  shell: ceph osd pool create cephfs_data {{ pg_num }} ; ceph osd pool create cephfs_metadata {{ metadata_pg_num }} ; ceph fs new cephfs cephfs_metadata cephfs_data
+
+- name: cfg_fs
+  shell: netstat -ntpl | grep 6789 | awk '{ print $4}'
+  register: cfg_fs
+
+- name: cfg_fs_passwd
+  shell: cat /etc/ceph/ceph.client.admin.keyring | grep key | awk '{ print $3}'
+  register: cfg_fs_passwd
+
+#- name: Notice
+#  debug: msg="ceph_dashboard: {{ cfg_mgr.stdout }} by --user: root passwd: {{ mgr_passwd }}--"
+
+- name: Notice
+  debug: msg="Now you can mount ceph filesystem by command 'mount -t ceph {{ cfg_fs.stdout }}:/ /mount_point -o name=admin,secret={{ cfg_fs_passwd.stdout }}'"
+

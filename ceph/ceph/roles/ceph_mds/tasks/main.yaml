@@ -1,0 +1,6 @@
+---
+- name: Create metaserver
+  shell: cd {{ deploy_dir }} ; ceph-deploy mds create {{ mds }}
+
+- name: Craete mdr
+  shell: cd {{ deploy_dir }} ; ceph-deploy mgr create {{ mgr }}

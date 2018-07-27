@@ -1,0 +1,50 @@
+#ceph admin
+[admin]
+192.168.80.128
+
+#ceph nodes
+[nodes]
+192.168.80.129 nodename=node1
+192.168.80.130 nodename=node2
+192.168.80.132 nodename=node3 
+
+#ceph osd
+[osd]
+node1
+node2
+node3
+
+#ceph mgr
+[mgr]
+node1
+
+#ceph fs
+[fs]
+node1
+
+
+[all:vars]
+#ceph deploy dir
+deploy_dir="/root/my-cluster"
+
+#node name
+nodes_name="node1 node2 node3"
+
+#osd device
+osd_device="/dev/sdb"
+
+#metaserver
+mds="node1 node2"
+
+#mgr node
+mgr="node1"
+
+#mgr access port
+mgr_port="8080"
+
+#mgr passwd
+mgr_passwd="123.com"
+
+#ceph fs
+pg_num="60"
+metadata_pg_num="60"

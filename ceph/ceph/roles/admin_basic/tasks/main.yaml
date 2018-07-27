@@ -1,0 +1,12 @@
+---
+- name: Copy ceph repo to admin
+  template: src=ceph.repo dest=/etc/yum.repos.d/
+  tags: copy file 
+
+- name: Install tool "ceph-deploy"
+  yum: name=ceph-deploy state=latest
+
+- name: Close firewalld and selinux--centos
+  shell: systemctl stop firewalld;systemctl disable firewalld;setenforce 0;sed -i "s/SELINUX=enforcing/SELINUX=disabled/" /etc/sysconfig/selinux
+  when: ansible_distribution == "CentOS"
+

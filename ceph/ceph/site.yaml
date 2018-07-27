@@ -1,0 +1,40 @@
+---
+- hosts: admin
+  roles:
+  - admin_basic
+
+- hosts: nodes
+  roles:
+  - node_basic
+
+- hosts: admin
+  gather_facts: false
+  roles: 
+  - ceph_node
+ 
+- hosts: admin
+  gather_facts: false
+  roles:
+  - ceph_mon
+
+- hosts: admin
+  gather_facts: false
+  roles:
+  - ceph_osd
+
+- hosts: admin
+  gather_facts: false
+  roles:
+  - ceph_mds
+
+- hosts: mgr
+  roles:
+  - ceph_mgr
+
+- hosts: fs
+  gather_facts: false
+  roles:
+  - ceph_fs
+
+    
+

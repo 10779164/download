@@ -1,0 +1,10 @@
+---
+- name: Init ceph monitor
+  shell: cd {{ deploy_dir }} ; ceph-deploy --overwrite-conf mon create-initial
+  ignore_errors: true
+
+- name: create admin node
+  shell: cd {{ deploy_dir }} ; ceph-deploy admin {{ nodes_name }}
+
+- name: create ceph monitor
+  shell: cd {{ deploy_dir }} ; ceph-deploy --overwrite-conf mon create {{ nodes_name }}

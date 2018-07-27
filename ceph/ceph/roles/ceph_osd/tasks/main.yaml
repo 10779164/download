@@ -1,0 +1,12 @@
+---
+#- name: flush disk
+#  shell: cd {{ deploy_dir }} ; ceph-deploy disk zap {{ item }} {{ osd_device }}
+#  with_items:
+#  - '{{ groups.osd }}'
+
+- name: install ceph osd
+  shell: cd {{ deploy_dir }} ; ceph-deploy osd create --data {{ osd_device }} {{ item }}
+  with_items:
+  - '{{ groups.osd }}'
+
+
