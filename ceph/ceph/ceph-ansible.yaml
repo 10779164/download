@@ -11,20 +11,8 @@
   gather_facts: false
   roles: 
   - ceph_node
- 
-- hosts: admin
-  gather_facts: false
-  roles:
   - ceph_mon
-
-- hosts: admin
-  gather_facts: false
-  roles:
   - ceph_osd
-
-- hosts: admin
-  gather_facts: false
-  roles:
   - ceph_mds
 
 - hosts: mgr
