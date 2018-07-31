@@ -1,0 +1,226 @@
+[2018-07-29 23:39:33,207][ceph_deploy.conf][DEBUG ] found configuration file at: /root/.cephdeploy.conf
+[2018-07-29 23:39:33,208][ceph_deploy.cli][INFO  ] Invoked (2.0.1): /usr/bin/ceph-deploy install --rgw node1
+[2018-07-29 23:39:33,208][ceph_deploy.cli][INFO  ] ceph-deploy options:
+[2018-07-29 23:39:33,208][ceph_deploy.cli][INFO  ]  verbose                       : False
+[2018-07-29 23:39:33,209][ceph_deploy.cli][INFO  ]  testing                       : None
+[2018-07-29 23:39:33,209][ceph_deploy.cli][INFO  ]  cd_conf                       : <ceph_deploy.conf.cephdeploy.Conf instance at 0xd81320>
+[2018-07-29 23:39:33,209][ceph_deploy.cli][INFO  ]  cluster                       : ceph
+[2018-07-29 23:39:33,209][ceph_deploy.cli][INFO  ]  dev_commit                    : None
+[2018-07-29 23:39:33,209][ceph_deploy.cli][INFO  ]  install_mds                   : False
+[2018-07-29 23:39:33,209][ceph_deploy.cli][INFO  ]  stable                        : None
+[2018-07-29 23:39:33,209][ceph_deploy.cli][INFO  ]  default_release               : False
+[2018-07-29 23:39:33,210][ceph_deploy.cli][INFO  ]  username                      : None
+[2018-07-29 23:39:33,210][ceph_deploy.cli][INFO  ]  adjust_repos                  : True
+[2018-07-29 23:39:33,210][ceph_deploy.cli][INFO  ]  func                          : <function install at 0xceb488>
+[2018-07-29 23:39:33,210][ceph_deploy.cli][INFO  ]  install_mgr                   : False
+[2018-07-29 23:39:33,210][ceph_deploy.cli][INFO  ]  install_all                   : False
+[2018-07-29 23:39:33,211][ceph_deploy.cli][INFO  ]  repo                          : False
+[2018-07-29 23:39:33,211][ceph_deploy.cli][INFO  ]  host                          : ['node1']
+[2018-07-29 23:39:33,211][ceph_deploy.cli][INFO  ]  install_rgw                   : True
+[2018-07-29 23:39:33,211][ceph_deploy.cli][INFO  ]  install_tests                 : False
+[2018-07-29 23:39:33,211][ceph_deploy.cli][INFO  ]  repo_url                      : None
+[2018-07-29 23:39:33,211][ceph_deploy.cli][INFO  ]  ceph_conf                     : None
+[2018-07-29 23:39:33,211][ceph_deploy.cli][INFO  ]  install_osd                   : False
+[2018-07-29 23:39:33,211][ceph_deploy.cli][INFO  ]  version_kind                  : stable
+[2018-07-29 23:39:33,211][ceph_deploy.cli][INFO  ]  install_common                : False
+[2018-07-29 23:39:33,212][ceph_deploy.cli][INFO  ]  overwrite_conf                : False
+[2018-07-29 23:39:33,212][ceph_deploy.cli][INFO  ]  quiet                         : False
+[2018-07-29 23:39:33,212][ceph_deploy.cli][INFO  ]  dev                           : master
+[2018-07-29 23:39:33,212][ceph_deploy.cli][INFO  ]  nogpgcheck                    : False
+[2018-07-29 23:39:33,212][ceph_deploy.cli][INFO  ]  local_mirror                  : None
+[2018-07-29 23:39:33,212][ceph_deploy.cli][INFO  ]  release                       : None
+[2018-07-29 23:39:33,212][ceph_deploy.cli][INFO  ]  install_mon                   : False
+[2018-07-29 23:39:33,212][ceph_deploy.cli][INFO  ]  gpg_url                       : None
+[2018-07-29 23:39:33,212][ceph_deploy.install][DEBUG ] Installing stable version mimic on cluster ceph hosts node1
+[2018-07-29 23:39:33,212][ceph_deploy.install][DEBUG ] Detecting platform for host node1 ...
+[2018-07-29 23:39:34,485][node1][DEBUG ] connected to host: node1 
+[2018-07-29 23:39:34,487][node1][DEBUG ] detect platform information from remote host
+[2018-07-29 23:39:34,535][node1][DEBUG ] detect machine type
+[2018-07-29 23:39:34,557][ceph_deploy.install][INFO  ] Distro info: CentOS Linux 7.4.1708 Core
+[2018-07-29 23:39:34,557][node1][INFO  ] installing Ceph on node1
+[2018-07-29 23:39:34,567][node1][INFO  ] Running command: yum clean all
+[2018-07-29 23:39:34,866][node1][DEBUG ] Loaded plugins: fastestmirror, priorities
+[2018-07-29 23:39:34,989][node1][DEBUG ] Cleaning repos: base ceph ceph-noarch epel extras updates
+[2018-07-29 23:39:34,989][node1][DEBUG ] Cleaning up everything
+[2018-07-29 23:39:34,990][node1][DEBUG ] Maybe you want: rm -rf /var/cache/yum, to also free up space taken by orphaned data from disabled or removed repos
+[2018-07-29 23:39:34,993][node1][DEBUG ] Cleaning up list of fastest mirrors
+[2018-07-29 23:39:35,068][node1][INFO  ] Running command: yum -y install epel-release
+[2018-07-29 23:39:35,301][node1][DEBUG ] Loaded plugins: fastestmirror, priorities
+[2018-07-29 23:40:05,729][node1][WARNING] 
+[2018-07-29 23:40:05,729][node1][WARNING] 
+[2018-07-29 23:40:05,729][node1][WARNING]  One of the configured repositories failed (Unknown),
+[2018-07-29 23:40:05,730][node1][WARNING]  and yum doesn't have enough cached data to continue. At this point the only
+[2018-07-29 23:40:05,730][node1][WARNING]  safe thing yum can do is fail. There are a few ways to work "fix" this:
+[2018-07-29 23:40:05,730][node1][WARNING] 
+[2018-07-29 23:40:05,730][node1][WARNING]      1. Contact the upstream for the repository and get them to fix the problem.
+[2018-07-29 23:40:05,731][node1][WARNING] 
+[2018-07-29 23:40:05,731][node1][WARNING]      2. Reconfigure the baseurl/etc. for the repository, to point to a working
+[2018-07-29 23:40:05,731][node1][WARNING]         upstream. This is most often useful if you are using a newer
+[2018-07-29 23:40:05,731][node1][WARNING]         distribution release than is supported by the repository (and the
+[2018-07-29 23:40:05,731][node1][WARNING]         packages for the previous distribution release still work).
+[2018-07-29 23:40:05,731][node1][WARNING] 
+[2018-07-29 23:40:05,731][node1][WARNING]      3. Run the command with the repository temporarily disabled
+[2018-07-29 23:40:05,731][node1][WARNING]             yum --disablerepo=<repoid> ...
+[2018-07-29 23:40:05,731][node1][WARNING] 
+[2018-07-29 23:40:05,732][node1][WARNING]      4. Disable the repository permanently, so yum won't use it by default. Yum
+[2018-07-29 23:40:05,732][node1][WARNING]         will then just ignore the repository until you permanently enable it
+[2018-07-29 23:40:05,732][node1][WARNING]         again or use --enablerepo for temporary usage:
+[2018-07-29 23:40:05,732][node1][WARNING] 
+[2018-07-29 23:40:05,732][node1][WARNING]             yum-config-manager --disable <repoid>
+[2018-07-29 23:40:05,732][node1][WARNING]         or
+[2018-07-29 23:40:05,733][node1][WARNING]             subscription-manager repos --disable=<repoid>
+[2018-07-29 23:40:05,733][node1][WARNING] 
+[2018-07-29 23:40:05,733][node1][WARNING]      5. Configure the failing repository to be skipped, if it is unavailable.
+[2018-07-29 23:40:05,733][node1][WARNING]         Note that yum will try to contact the repo. when it runs most commands,
+[2018-07-29 23:40:05,733][node1][WARNING]         so will have to try and fail each time (and thus. yum will be be much
+[2018-07-29 23:40:05,733][node1][WARNING]         slower). If it is a very temporary problem though, this is often a nice
+[2018-07-29 23:40:05,733][node1][WARNING]         compromise:
+[2018-07-29 23:40:05,734][node1][WARNING] 
+[2018-07-29 23:40:05,734][node1][WARNING]             yum-config-manager --save --setopt=<repoid>.skip_if_unavailable=true
+[2018-07-29 23:40:05,734][node1][WARNING] 
+[2018-07-29 23:40:05,734][node1][WARNING] Cannot find a valid baseurl for repo: base/7/x86_64
+[2018-07-29 23:40:05,734][node1][DEBUG ] Could not retrieve mirrorlist http://mirrorlist.centos.org/?release=7&arch=x86_64&repo=os&infra=stock error was
+[2018-07-29 23:40:05,734][node1][DEBUG ] 12: Timeout on http://mirrorlist.centos.org/?release=7&arch=x86_64&repo=os&infra=stock: (28, 'Operation too slow. Less than 1000 bytes/sec transferred the last 30 seconds')
+[2018-07-29 23:40:05,736][node1][ERROR ] RuntimeError: command returned non-zero exit status: 1
+[2018-07-29 23:40:05,737][ceph_deploy][ERROR ] RuntimeError: Failed to execute command: yum -y install epel-release
+
+[2018-07-29 23:40:10,600][ceph_deploy.conf][DEBUG ] found configuration file at: /root/.cephdeploy.conf
+[2018-07-29 23:40:10,601][ceph_deploy.cli][INFO  ] Invoked (2.0.1): /usr/bin/ceph-deploy install --rgw node1
+[2018-07-29 23:40:10,601][ceph_deploy.cli][INFO  ] ceph-deploy options:
+[2018-07-29 23:40:10,601][ceph_deploy.cli][INFO  ]  verbose                       : False
+[2018-07-29 23:40:10,602][ceph_deploy.cli][INFO  ]  testing                       : None
+[2018-07-29 23:40:10,602][ceph_deploy.cli][INFO  ]  cd_conf                       : <ceph_deploy.conf.cephdeploy.Conf instance at 0x209c320>
+[2018-07-29 23:40:10,602][ceph_deploy.cli][INFO  ]  cluster                       : ceph
+[2018-07-29 23:40:10,602][ceph_deploy.cli][INFO  ]  dev_commit                    : None
+[2018-07-29 23:40:10,602][ceph_deploy.cli][INFO  ]  install_mds                   : False
+[2018-07-29 23:40:10,602][ceph_deploy.cli][INFO  ]  stable                        : None
+[2018-07-29 23:40:10,603][ceph_deploy.cli][INFO  ]  default_release               : False
+[2018-07-29 23:40:10,603][ceph_deploy.cli][INFO  ]  username                      : None
+[2018-07-29 23:40:10,603][ceph_deploy.cli][INFO  ]  adjust_repos                  : True
+[2018-07-29 23:40:10,603][ceph_deploy.cli][INFO  ]  func                          : <function install at 0x2006488>
+[2018-07-29 23:40:10,603][ceph_deploy.cli][INFO  ]  install_mgr                   : False
+[2018-07-29 23:40:10,603][ceph_deploy.cli][INFO  ]  install_all                   : False
+[2018-07-29 23:40:10,603][ceph_deploy.cli][INFO  ]  repo                          : False
+[2018-07-29 23:40:10,603][ceph_deploy.cli][INFO  ]  host                          : ['node1']
+[2018-07-29 23:40:10,603][ceph_deploy.cli][INFO  ]  install_rgw                   : True
+[2018-07-29 23:40:10,603][ceph_deploy.cli][INFO  ]  install_tests                 : False
+[2018-07-29 23:40:10,604][ceph_deploy.cli][INFO  ]  repo_url                      : None
+[2018-07-29 23:40:10,604][ceph_deploy.cli][INFO  ]  ceph_conf                     : None
+[2018-07-29 23:40:10,604][ceph_deploy.cli][INFO  ]  install_osd                   : False
+[2018-07-29 23:40:10,604][ceph_deploy.cli][INFO  ]  version_kind                  : stable
+[2018-07-29 23:40:10,604][ceph_deploy.cli][INFO  ]  install_common                : False
+[2018-07-29 23:40:10,604][ceph_deploy.cli][INFO  ]  overwrite_conf                : False
+[2018-07-29 23:40:10,604][ceph_deploy.cli][INFO  ]  quiet                         : False
+[2018-07-29 23:40:10,604][ceph_deploy.cli][INFO  ]  dev                           : master
+[2018-07-29 23:40:10,604][ceph_deploy.cli][INFO  ]  nogpgcheck                    : False
+[2018-07-29 23:40:10,604][ceph_deploy.cli][INFO  ]  local_mirror                  : None
+[2018-07-29 23:40:10,605][ceph_deploy.cli][INFO  ]  release                       : None
+[2018-07-29 23:40:10,605][ceph_deploy.cli][INFO  ]  install_mon                   : False
+[2018-07-29 23:40:10,605][ceph_deploy.cli][INFO  ]  gpg_url                       : None
+[2018-07-29 23:40:10,605][ceph_deploy.install][DEBUG ] Installing stable version mimic on cluster ceph hosts node1
+[2018-07-29 23:40:10,605][ceph_deploy.install][DEBUG ] Detecting platform for host node1 ...
+[2018-07-29 23:40:11,897][node1][DEBUG ] connected to host: node1 
+[2018-07-29 23:40:11,899][node1][DEBUG ] detect platform information from remote host
+[2018-07-29 23:40:11,947][node1][DEBUG ] detect machine type
+[2018-07-29 23:40:11,970][ceph_deploy.install][INFO  ] Distro info: CentOS Linux 7.4.1708 Core
+[2018-07-29 23:40:11,971][node1][INFO  ] installing Ceph on node1
+[2018-07-29 23:40:11,985][node1][INFO  ] Running command: yum clean all
+[2018-07-29 23:40:12,224][node1][DEBUG ] Loaded plugins: fastestmirror, priorities
+[2018-07-29 23:40:12,294][node1][DEBUG ] Cleaning repos: base ceph ceph-noarch epel extras updates
+[2018-07-29 23:40:12,295][node1][DEBUG ] Cleaning up everything
+[2018-07-29 23:40:12,295][node1][DEBUG ] Maybe you want: rm -rf /var/cache/yum, to also free up space taken by orphaned data from disabled or removed repos
+[2018-07-29 23:40:12,339][node1][INFO  ] Running command: yum -y install epel-release
+[2018-07-29 23:40:12,522][node1][DEBUG ] Loaded plugins: fastestmirror, priorities
+[2018-07-29 23:40:24,154][node1][DEBUG ] Determining fastest mirrors
+[2018-07-29 23:40:27,671][node1][DEBUG ]  * base: mirrors.cn99.com
+[2018-07-29 23:40:27,672][node1][DEBUG ]  * epel: mirrors.aliyun.com
+[2018-07-29 23:40:27,672][node1][DEBUG ]  * extras: mirrors.aliyun.com
+[2018-07-29 23:40:27,672][node1][DEBUG ]  * updates: mirrors.aliyun.com
+[2018-07-29 23:40:36,366][node1][DEBUG ] 8 packages excluded due to repository priority protections
+[2018-07-29 23:40:37,394][node1][DEBUG ] Package epel-release-7-11.noarch already installed and latest version
+[2018-07-29 23:40:37,395][node1][DEBUG ] Nothing to do
+[2018-07-29 23:40:37,567][node1][INFO  ] Running command: yum -y install yum-plugin-priorities
+[2018-07-29 23:40:37,846][node1][DEBUG ] Loaded plugins: fastestmirror, priorities
+[2018-07-29 23:40:37,962][node1][DEBUG ] Loading mirror speeds from cached hostfile
+[2018-07-29 23:40:37,970][node1][DEBUG ]  * base: mirrors.cn99.com
+[2018-07-29 23:40:37,971][node1][DEBUG ]  * epel: mirrors.aliyun.com
+[2018-07-29 23:40:37,972][node1][DEBUG ]  * extras: mirrors.aliyun.com
+[2018-07-29 23:40:37,973][node1][DEBUG ]  * updates: mirrors.aliyun.com
+[2018-07-29 23:40:39,859][node1][DEBUG ] 8 packages excluded due to repository priority protections
+[2018-07-29 23:40:40,885][node1][DEBUG ] Package yum-plugin-priorities-1.1.31-45.el7.noarch already installed and latest version
+[2018-07-29 23:40:40,886][node1][DEBUG ] Nothing to do
+[2018-07-29 23:40:41,053][node1][DEBUG ] Configure Yum priorities to include obsoletes
+[2018-07-29 23:40:41,060][node1][WARNING] check_obsoletes has been enabled for Yum priorities plugin
+[2018-07-29 23:40:41,065][node1][INFO  ] Running command: rpm --import https://download.ceph.com/keys/release.asc
+[2018-07-29 23:40:43,478][node1][INFO  ] Running command: yum remove -y ceph-release
+[2018-07-29 23:40:43,713][node1][DEBUG ] Loaded plugins: fastestmirror, priorities
+[2018-07-29 23:40:43,931][node1][WARNING] No Match for argument: ceph-release
+[2018-07-29 23:40:44,049][node1][DEBUG ] No Packages marked for removal
+[2018-07-29 23:40:44,129][node1][INFO  ] Running command: yum install -y https://download.ceph.com/rpm-mimic/el7/noarch/ceph-release-1-0.el7.noarch.rpm
+[2018-07-29 23:40:44,419][node1][DEBUG ] Loaded plugins: fastestmirror, priorities
+[2018-07-29 23:40:45,953][node1][DEBUG ] Examining /var/tmp/yum-root-8119dc/ceph-release-1-0.el7.noarch.rpm: ceph-release-1-1.el7.noarch
+[2018-07-29 23:40:45,954][node1][DEBUG ] Marking /var/tmp/yum-root-8119dc/ceph-release-1-0.el7.noarch.rpm to be installed
+[2018-07-29 23:40:45,954][node1][DEBUG ] Resolving Dependencies
+[2018-07-29 23:40:45,954][node1][WARNING] There are unfinished transactions remaining. You might consider running yum-complete-transaction, or "yum-complete-transaction --cleanup-only" and "yum history redo last", first to finish them. If those don't work you'll have to try removing/installing packages by hand (maybe package-cleanup can help).
+[2018-07-29 23:40:45,955][node1][WARNING] The program yum-complete-transaction is found in the yum-utils package.
+[2018-07-29 23:40:49,012][node1][DEBUG ] --> Running transaction check
+[2018-07-29 23:40:49,013][node1][DEBUG ] ---> Package ceph-release.noarch 0:1-1.el7 will be installed
+[2018-07-29 23:40:50,029][node1][DEBUG ] --> Finished Dependency Resolution
+[2018-07-29 23:40:50,157][node1][DEBUG ] 
+[2018-07-29 23:40:50,157][node1][DEBUG ] Dependencies Resolved
+[2018-07-29 23:40:50,157][node1][DEBUG ] 
+[2018-07-29 23:40:50,157][node1][DEBUG ] ================================================================================
+[2018-07-29 23:40:50,157][node1][DEBUG ]  Package          Arch       Version     Repository                        Size
+[2018-07-29 23:40:50,158][node1][DEBUG ] ================================================================================
+[2018-07-29 23:40:50,158][node1][DEBUG ] Installing:
+[2018-07-29 23:40:50,158][node1][DEBUG ]  ceph-release     noarch     1-1.el7     /ceph-release-1-0.el7.noarch     535  
+[2018-07-29 23:40:50,158][node1][DEBUG ] 
+[2018-07-29 23:40:50,158][node1][DEBUG ] Transaction Summary
+[2018-07-29 23:40:50,158][node1][DEBUG ] ================================================================================
+[2018-07-29 23:40:50,158][node1][DEBUG ] Install  1 Package
+[2018-07-29 23:40:50,158][node1][DEBUG ] 
+[2018-07-29 23:40:50,159][node1][DEBUG ] Total size: 535  
+[2018-07-29 23:40:50,159][node1][DEBUG ] Installed size: 535  
+[2018-07-29 23:40:50,159][node1][DEBUG ] Downloading packages:
+[2018-07-29 23:40:50,159][node1][DEBUG ] Running transaction check
+[2018-07-29 23:40:50,159][node1][DEBUG ] Running transaction test
+[2018-07-29 23:40:50,159][node1][DEBUG ] Transaction test succeeded
+[2018-07-29 23:40:50,159][node1][DEBUG ] Running transaction
+[2018-07-29 23:40:50,288][node1][DEBUG ]   Installing : ceph-release-1-1.el7.noarch                                  1/1 
+[2018-07-29 23:40:50,289][node1][DEBUG ] warning: /etc/yum.repos.d/ceph.repo created as /etc/yum.repos.d/ceph.repo.rpmnew
+[2018-07-29 23:40:50,465][node1][DEBUG ]   Verifying  : ceph-release-1-1.el7.noarch                                  1/1 
+[2018-07-29 23:40:50,466][node1][DEBUG ] 
+[2018-07-29 23:40:50,466][node1][DEBUG ] Installed:
+[2018-07-29 23:40:50,466][node1][DEBUG ]   ceph-release.noarch 0:1-1.el7                                                 
+[2018-07-29 23:40:50,466][node1][DEBUG ] 
+[2018-07-29 23:40:50,466][node1][DEBUG ] Complete!
+[2018-07-29 23:40:50,466][node1][WARNING] ensuring that /etc/yum.repos.d/ceph.repo contains a high priority
+[2018-07-29 23:40:50,476][node1][WARNING] altered ceph.repo priorities to contain: priority=1
+[2018-07-29 23:40:50,482][node1][INFO  ] Running command: yum -y install ceph-radosgw
+[2018-07-29 23:40:50,778][node1][DEBUG ] Loaded plugins: fastestmirror, priorities
+[2018-07-29 23:40:51,061][node1][DEBUG ] Loading mirror speeds from cached hostfile
+[2018-07-29 23:40:51,061][node1][DEBUG ]  * base: mirrors.cn99.com
+[2018-07-29 23:40:51,061][node1][DEBUG ]  * epel: mirrors.aliyun.com
+[2018-07-29 23:40:51,062][node1][DEBUG ]  * extras: mirrors.aliyun.com
+[2018-07-29 23:40:51,062][node1][DEBUG ]  * updates: mirrors.aliyun.com
+[2018-07-29 23:40:52,754][node1][DEBUG ] 8 packages excluded due to repository priority protections
+[2018-07-29 23:40:53,574][node1][DEBUG ] Package 2:ceph-radosgw-13.2.1-0.el7.x86_64 already installed and latest version
+[2018-07-29 23:40:53,575][node1][DEBUG ] Nothing to do
+[2018-07-29 23:40:53,703][node1][INFO  ] Running command: ceph --version
+[2018-07-29 23:40:53,886][node1][DEBUG ] ceph version 13.2.1 (5533ecdc0fda920179d7ad84e0aa65a127b20d77) mimic (stable)
+[2018-07-29 23:41:18,071][ceph_deploy.conf][DEBUG ] found configuration file at: /root/.cephdeploy.conf
+[2018-07-29 23:41:18,073][ceph_deploy.cli][INFO  ] Invoked (2.0.1): /usr/bin/ceph-deploy rgw create node1
+[2018-07-29 23:41:18,073][ceph_deploy.cli][INFO  ] ceph-deploy options:
+[2018-07-29 23:41:18,073][ceph_deploy.cli][INFO  ]  username                      : None
+[2018-07-29 23:41:18,073][ceph_deploy.cli][INFO  ]  verbose                       : False
+[2018-07-29 23:41:18,073][ceph_deploy.cli][INFO  ]  rgw                           : [('node1', 'rgw.node1')]
+[2018-07-29 23:41:18,073][ceph_deploy.cli][INFO  ]  overwrite_conf                : False
+[2018-07-29 23:41:18,073][ceph_deploy.cli][INFO  ]  subcommand                    : create
+[2018-07-29 23:41:18,073][ceph_deploy.cli][INFO  ]  quiet                         : False
+[2018-07-29 23:41:18,074][ceph_deploy.cli][INFO  ]  cd_conf                       : <ceph_deploy.conf.cephdeploy.Conf instance at 0x20ac320>
+[2018-07-29 23:41:18,074][ceph_deploy.cli][INFO  ]  cluster                       : ceph
+[2018-07-29 23:41:18,074][ceph_deploy.cli][INFO  ]  func                          : <function rgw at 0x2014e60>
+[2018-07-29 23:41:18,074][ceph_deploy.cli][INFO  ]  ceph_conf                     : None
+[2018-07-29 23:41:18,074][ceph_deploy.cli][INFO  ]  default_release               : False
+[2018-07-29 23:41:18,074][ceph_deploy][ERROR ] ConfigError: Cannot load config: [Errno 2] No such file or directory: 'ceph.conf'; has `ceph-deploy new` been run in this directory?
+

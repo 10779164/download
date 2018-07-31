@@ -3,7 +3,7 @@
   shell: ceph mgr module enable dashboard ; ceph dashboard create-self-signed-cert
 
 - name: Set mgr
-  shell: ceph config set mgr mgr/dashboard/{{ mgr }}/server_addr {{ ansible_default_ipv4.address }} ; ceph config set mgr {{ mgr }}/dashboard/node1/server_port {{ mgr_port }} ; ceph dashboard set-login-credentials root {{ mgr_passwd }}
+  shell: ceph config set mgr mgr/dashboard/{{ mgr }}/server_addr {{ ansible_default_ipv4.address }} ; ceph config set mgr mgr/dashboard/{{ mgr }}/server_port {{ mgr_port }} ; ceph dashboard set-login-credentials root {{ mgr_passwd }}
 
 - name: Restart mgr service
   service: name= ceph-mgr@{{ mgr }} state=restarted 

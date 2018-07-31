@@ -14,5 +14,5 @@
   shell: ntpdate pool.ntp.org;systemctl restart ntpd;systemctl enable ntpd
 
 - name: close firewalld and selinux
-  shell: systemctl stop firewalld;systemctl disable firewalld;setenforce 0;sed -i "s/SELINUX=enforcing/SELINUX=disabled/" /etc/sysconfig/selinux
+  shell: systemctl stop firewalld;systemctl disable firewalld ; setenforce 0 ; sed -i "s/SELINUX=enforcing/SELINUX=disabled/g" /etc/sysconfig/selinux
   when: ansible_distribution == "CentOS"
