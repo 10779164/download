@@ -35,7 +35,7 @@ InstallSQLServer() {
     echo "${SECURE_MYSQL}"
     echo "update mysql.user set plugin = 'mysql_native_password' where user='root';" | mysql -uroot -p${CFG_MYSQL_ROOT_PWD}
     sed -i 's/bind-address		= 127.0.0.1/#bind-address		= 127.0.0.1/g' /etc/mysql/mariadb.conf.d/50-server.cnf
-    sed -i 's/password = /password = ${CFG_MYSQL_ROOT_PWD}/g' /etc/mysql/debian.cnf
+    sed -i 's/password = /password = '${CFG_MYSQL_ROOT_PWD}'/g' /etc/mysql/debian.cnf
     sed -i "/\[mysqld\]/a\ sql-mode='NO_ENGINE_SUBSTITUTION'" /etc/mysql/mariadb.conf.d/50-server.cnf
 
     systemctl restart mariadb.service > /dev/null 2>&1
