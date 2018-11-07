@@ -8,8 +8,21 @@ InstallWebServer() {
     echo "Installing Apache and..."
     yum -y install httpd  &>/dev/null
 	echo -e "${green}done!${NC}\n"
-	echo "Installing PHP and Modules... "
-	yum -y install mod_ssl php php-mysql php-mbstring php-devel php-gd php-imap php-ldap php-mysql php-odbc php-pear php-xml php-xmlrpc php-pecl-apc php-mbstring php-mcrypt php-mssql php-snmp php-soap php-tidy php-fpm httpd-devel > /dev/null 2>&1 
+
+	echo "Installing PHP and Modules... "	
+	rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm &>/dev/null
+        rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm &>/dev/null
+        if [ $CFG_PHPVERSION == "php5.4" ];then
+                yum -y install mod_ssl php php-mysql php-mbstring php-devel php-gd php-imap php-ldap php-mysql php-odbc php-pear php-xml php-xmlrpc php-pecl-apcu php-mbstring php-mcrypt php-snmp php-soap php-tidy php-fpm httpd-devel > /dev/null 2>&1
+        elif [ $CFG_PHPVERSION == "php7.0" ];then
+                yum -y install mod_ssl php70w php70w-mysql php70w-mbstring php70w-devel php70w-gd php70w-imap php70w-ldap php70w-mysql php70w-odbc php70w-pear php70w-xml php70w-xmlrpc php70w-pecl-apcu php70w-mbstring php70w-mcrypt php70w-snmp php70w-soap php70w-tidy php70w-fpm httpd-devel > /dev/null 2>&1
+        elif [ $CFG_PHPVERSION == "php7.1" ];then
+                yum -y install mod_ssl php71w php71w-mysql php71w-mbstring php71w-devel php71w-gd php71w-imap php71w-ldap php71w-mysql php71w-odbc php71w-pear php71w-xml php71w-xmlrpc php71w-pecl-apcu php71w-mbstring php71w-mcrypt php71w-snmp php71w-soap php71w-tidy php71w-fpm httpd-devel > /dev/null 2>&1
+        else
+                yum -y install mod_ssl php72w php72w-mysql php72w-mbstring php72w-devel php72w-gd php72w-imap php72w-ldap php72w-mysql php72w-odbc php72w-pear php72w-xml php72w-xmlrpc php72w-pecl-apcu php72w-mbstring php72w-snmp php72w-soap php72w-tidy php72w-fpm httpd-devel > /dev/null 2>&1
+        fi	
+	echo -e "${green}done!${NC}\n"
+
 	echo "Installing needed Programs for PHP and Apache... "
 	yum -y install curl curl-devel perl-libwww-perl ImageMagick libxml2 libxml2-devel mod_fcgid php-cli > /dev/null 2>&1
 	echo -e "${green}done!${NC}\n"	
