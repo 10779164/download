@@ -13,7 +13,7 @@ AskQuestions() {
 
 	  while [ "x$CFG_WEBSERVER" == "x" ]
           do
-		CFG_PHPVERSION=$(whiptail --title "WEBSERVER" --backtitle "$WT_BACKTITLE" --nocancel --radiolist "Select php version" 10 50 4 "php7.0" "default" ON "php5.4" "" OFF "php7.1" "" OFF "php7.2" ""  OFF 3>&1 1>&2 2>&3)
+		#CFG_PHPVERSION=$(whiptail --title "WEBSERVER" --backtitle "$WT_BACKTITLE" --nocancel --radiolist "Select php version" 10 50 4 "php7.0" "default" ON "php5.4" "" OFF "php7.1" "" OFF "php7.2" ""  OFF 3>&1 1>&2 2>&3)
                 CFG_WEBSERVER=$(whiptail --title "WEBSERVER" --backtitle "$WT_BACKTITLE" --nocancel --radiolist "Select webserver type" 10 50 2 "apache" "default" ON "nginx" "Unimplemented" OFF 3>&1 1>&2 2>&3)
           done
 	
