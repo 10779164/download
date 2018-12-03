@@ -3,6 +3,7 @@
 #    Start the ISPConfig3 installation script
 #---------------------------------------------------------------------
 InstallISPConfig() {
+  #CFG_MYSQL_ROOT_PWD=${CFG_MYSQL_ROOT_PWD//\\/}
   echo "Installing ISPConfig3... "
   cd $PWD
   tar -xvf ISPConfig-3-stable.tar.gz &>/dev/null
