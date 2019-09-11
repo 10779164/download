@@ -102,10 +102,15 @@ Description=php
 After=network.target remote-fs.target nss-lookup.target
 [Service]
 Type=forking
-ExecStart=/usr/local/php-${php_version}/sbin/php-fpm${php_version}
+PIDFile=/usr/local/php-${php_version}/var/run/php-fpm.pid
+ExecStart=/usr/local/php-${php_version}/sbin/php-fpm --nodaemonize --fpm-config /usr/local/php-${php_version}/etc/php-fpm.conf
+ExecReload=/bin/kill -USR2 $MAINPID
+PrivateTmp=true
+
 [Install]
 WantedBy=multi-user.target
 EOF
+
 echo -e "${green}OK${NC}"
 echo ""
 
